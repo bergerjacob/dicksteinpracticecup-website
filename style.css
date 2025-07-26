@@ -1,0 +1,108 @@
+:root {
+    --bg-color: #f7f9fc;
+    --text-color: #333;
+    --header-color: #2c3e50;
+    --primary-color: #3498db;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.container {
+    max-width: 800px;
+    width: 100%;
+    text-align: center;
+}
+
+header h1 {
+    font-size: 2.5rem;
+    color: var(--header-color);
+    margin-bottom: 0.5rem;
+}
+
+header p {
+    font-size: 1.1rem;
+    color: #7f8c8d;
+    margin-bottom: 3rem;
+}
+
+main h2 {
+    font-size: 1.8rem;
+    color: var(--header-color);
+    margin-bottom: 1.5rem;
+}
+
+.table-container {
+    background-color: #ffffff;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    overflow: hidden; /* Ensures the border-radius is respected by the table */
+    border: 1px solid var(--border-color);
+}
+
+#winners-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+#winners-table th, #winners-table td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+#winners-table thead {
+    background-color: var(--bg-color);
+    font-weight: 600;
+}
+
+#winners-table th {
+    color: var(--header-color);
+}
+
+#winners-table tbody tr:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+#winners-table tbody tr:hover {
+    background-color: #ecf0f1;
+}
+
+#winners-table td:nth-child(3) { /* Series score */
+    font-weight: 600;
+    color: var(--primary-color);
+}
+
+#winners-table td:nth-child(1) { /* Winner name */
+    font-weight: 600;
+}
+
+footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #95a5a6;
+
+  text-align: center;
+  padding: 20px 0;
+}
+
+
+footer a {
+  color: inherit; /* Inherit the color from the parent element */
+  text-decoration: none; /* Remove underlines */
+}
+
+footer a:hover {
+  text-decoration: underline; /* Add underline on hover (optional) */
+}
+
