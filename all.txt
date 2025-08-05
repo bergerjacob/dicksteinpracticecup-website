@@ -1,0 +1,960 @@
+#!/bin/bash
+bundle exec jekyll servedicksteinpracticecup.com---
+layout: default
+title: About Dick Stein
+---
+
+<h1>Who the Heck is Dick Stein??</h1>
+
+<div class="content-card">
+    <div class="placeholder-image" style="width: 250px; height: 250px; float: left; margin-right: 25px;"></div>
+    <p>Some people say, “He walks softly and carries a big stick”, but I would beg to differ- he does NOT walk softly!</p>
+    <p>Dick Stein is the official monitor, regulator, recorder, slanderer and otherwise harasser for the Practice Cup events.</p>
+    <p>Still, he has been a great mentor for all of us, offering words of wisdom such as , “Second ball first”, “Try 17 & 18” or “Don’t hit the pocket” after a 7-10 split. Over his career, he has won tournaments playing both right and lefthanded.</p>
+    <p>Having bowled most of his life, he is quick to share stories of past exploits despite the fact that we have absolutely no interest in hearing them. He rarely plays these days due to health conditions, instead devoting most of his energy reading paperbacks and hurling occasional expletives our way. Oh, a word of advice: If you ever have the opportunity to go to the Margarita factory with him and his sister, Carol- I would decline. Let’s just say they love their “flights”.</p>
+    <p>So, that said, this is the man we have deemed to name our vaunted Cup after. Why? I have no idea.</p>
+</div>
+dicksteinpracticecup.com<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home | Dick Stein Practice Cup</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site-container">
+        <header class="site-header">
+    <div class="header-content">
+        <a class="site-title" href="/">🎳 Dick Stein Practice Cup</a>
+        <nav>
+            <a href="/">History</a>
+            <a href="/the-cup/">The Cup</a>
+            <a href="/dick-stein/">About Dick Stein</a>
+            <a href="/video/">Video</a>
+            <a href="/products/">Products</a>
+        </nav>
+    </div>
+</header>
+
+        <main>
+            <h1 id="-dick-stein-practice-cup">🏆 Dick Stein Practice Cup</h1>
+<p>The official home for our weekly casual competition.</p>
+
+<hr />
+
+<div class="content-card champion-card">
+    <h2 style="border-bottom: none; text-align: center;">Current Champion</h2>
+    <h3 style="text-align: center; margin-top: 0;">Bruce</h3>
+    <p style="text-align: center; margin-bottom: 0;"><strong>Week Of:</strong> July 28, 2025 | <strong>Series:</strong> 680</p>
+</div>
+
+<h2 id="high-scores">High Scores</h2>
+<div class="content-card">
+    <p>[A section to highlight high scores, like best series, 300 games, etc., will be added here.]</p>
+</div>
+
+<h2 id="past-results">Past Results</h2>
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Winner</th>
+                <th>Week Of</th>
+                <th>Series</th>
+            </tr>
+        </thead>
+        <tbody>
+            
+            <tr>
+                <td>Bruce</td>
+                <td>July 28, 2025</td>
+                <td>680</td>
+            </tr>
+            
+            <tr>
+                <td>Jacob</td>
+                <td>July 21, 2025</td>
+                <td>655</td>
+            </tr>
+            
+            <tr>
+                <td>Joseph</td>
+                <td>July 14, 2025</td>
+                <td>710</td>
+            </tr>
+            
+        </tbody>
+    </table>
+</div>
+
+<h2 id="past-winners-gallery">Past Winner’s Gallery</h2>
+<div class="content-card">
+    <p>A place to feature photos of our esteemed champions with the cup.</p>
+    <div class="gallery">
+        <div class="placeholder-image"></div>
+        <div class="placeholder-image"></div>
+        <div class="placeholder-image"></div>
+    </div>
+</div>
+
+        </main>
+        <footer>
+    <p>&copy; 2025 Dick Stein Practice Cup | <a href="https://bergerj.com">Created by Jacob Berger</a></p>
+</footer>
+
+    </div>
+</body>
+</html>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.4">Jekyll</generator><link href="http://localhost:4000/feed.xml" rel="self" type="application/atom+xml" /><link href="http://localhost:4000/" rel="alternate" type="text/html" /><updated>2025-08-04T17:53:21-07:00</updated><id>http://localhost:4000/feed.xml</id><title type="html">Dick Stein Practice Cup</title><subtitle>A weekly casual bowling competition for bragging rights and the coveted trophy.</subtitle><author><name>Bruce, Joseph, Carol &amp; Jacob</name></author></feed><!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video | Dick Stein Practice Cup</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site-container">
+        <header class="site-header">
+    <div class="header-content">
+        <a class="site-title" href="/">🎳 Dick Stein Practice Cup</a>
+        <nav>
+            <a href="/">History</a>
+            <a href="/the-cup/">The Cup</a>
+            <a href="/dick-stein/">About Dick Stein</a>
+            <a href="/video/">Video</a>
+            <a href="/products/">Products</a>
+        </nav>
+    </div>
+</header>
+
+        <main>
+            <h1>Video Highlights</h1>
+
+<div class="content-card">
+    <h2>Match Footage</h2>
+    <p>As suggested, this could be a spot for video clips of close matches, 300 games, or other memorable moments. This could also link to or embed YouTube content.</p>
+    <div class="placeholder-image">[Placeholder for embedded video clip]</div>
+</div>
+
+        </main>
+        <footer>
+    <p>&copy; 2025 Dick Stein Practice Cup | <a href="https://bergerj.com">Created by Jacob Berger</a></p>
+</footer>
+
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Dick Stein | Dick Stein Practice Cup</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site-container">
+        <header class="site-header">
+    <div class="header-content">
+        <a class="site-title" href="/">🎳 Dick Stein Practice Cup</a>
+        <nav>
+            <a href="/">History</a>
+            <a href="/the-cup/">The Cup</a>
+            <a href="/dick-stein/">About Dick Stein</a>
+            <a href="/video/">Video</a>
+            <a href="/products/">Products</a>
+        </nav>
+    </div>
+</header>
+
+        <main>
+            <h1>Who the Heck is Dick Stein??</h1>
+
+<div class="content-card">
+    <div class="placeholder-image" style="width: 250px; height: 250px; float: left; margin-right: 25px;"></div>
+    <p>Some people say, “He walks softly and carries a big stick”, but I would beg to differ- he does NOT walk softly!</p>
+    <p>Dick Stein is the official monitor, regulator, recorder, slanderer and otherwise harasser for the Practice Cup events.</p>
+    <p>Still, he has been a great mentor for all of us, offering words of wisdom such as , “Second ball first”, “Try 17 &amp; 18” or “Don’t hit the pocket” after a 7-10 split. Over his career, he has won tournaments playing both right and lefthanded.</p>
+    <p>Having bowled most of his life, he is quick to share stories of past exploits despite the fact that we have absolutely no interest in hearing them. He rarely plays these days due to health conditions, instead devoting most of his energy reading paperbacks and hurling occasional expletives our way. Oh, a word of advice: If you ever have the opportunity to go to the Margarita factory with him and his sister, Carol- I would decline. Let’s just say they love their “flights”.</p>
+    <p>So, that said, this is the man we have deemed to name our vaunted Cup after. Why? I have no idea.</p>
+</div>
+
+        </main>
+        <footer>
+    <p>&copy; 2025 Dick Stein Practice Cup | <a href="https://bergerj.com">Created by Jacob Berger</a></p>
+</footer>
+
+    </div>
+</body>
+</html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Products | Dick Stein Practice Cup</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site-container">
+        <header class="site-header">
+    <div class="header-content">
+        <a class="site-title" href="/">🎳 Dick Stein Practice Cup</a>
+        <nav>
+            <a href="/">History</a>
+            <a href="/the-cup/">The Cup</a>
+            <a href="/dick-stein/">About Dick Stein</a>
+            <a href="/video/">Video</a>
+            <a href="/products/">Products</a>
+        </nav>
+    </div>
+</header>
+
+        <main>
+            <h1>Products</h1>
+
+<div class="content-card">
+    <h2>Official Gear</h2>
+    <p>As the legend of the Practice Cup grows, we may offer a few items for purchase or as awards for special achievements.</p>
+    <div class="gallery">
+        <div class="content-card">
+            <div class="placeholder-image"></div>
+            <h3 style="text-align: center;">Shirts</h3>
+        </div>
+        <div class="content-card">
+            <div class="placeholder-image"></div>
+            <h3 style="text-align: center;">Caps</h3>
+        </div>
+        <div class="content-card">
+            <div class="placeholder-image"></div>
+            <h3 style="text-align: center;">Crutches</h3>
+        </div>
+    </div>
+</div>
+
+        </main>
+        <footer>
+    <p>&copy; 2025 Dick Stein Practice Cup | <a href="https://bergerj.com">Created by Jacob Berger</a></p>
+</footer>
+
+    </div>
+</body>
+</html>
+#!/bin/bash
+bundle exec jekyll serve# Site settings
+title: Dick Stein Practice Cup
+description: "A weekly casual bowling competition for bragging rights and the coveted trophy."
+url: "https://dicksteinpracticecup.com"
+author: Bruce, Joseph, Carol & Jacob
+
+# Build settings
+markdown: kramdown
+plugins:
+  - jekyll-feed
+
+# Exclude from processing.
+# Exclude a file by listing it here.
+exclude:
+  - Gemfile
+  - Gemfile.lock
+---
+layout: default
+title: Products
+---
+
+<h1>Products</h1>
+
+<div class="content-card">
+    <h2>Official Gear</h2>
+    <p>As the legend of the Practice Cup grows, we may offer a few items for purchase or as awards for special achievements.</p>
+    <div class="gallery">
+        <div class="content-card">
+            <div class="placeholder-image"></div>
+            <h3 style="text-align: center;">Shirts</h3>
+        </div>
+        <div class="content-card">
+            <div class="placeholder-image"></div>
+            <h3 style="text-align: center;">Caps</h3>
+        </div>
+        <div class="content-card">
+            <div class="placeholder-image"></div>
+            <h3 style="text-align: center;">Crutches</h3>
+        </div>
+    </div>
+</div>
+---
+layout: default
+title: The Cup
+---
+
+<h1>The Coveted Cup</h1>
+
+<div class="content-card">
+    <h2>What Is It?</h2>
+    <div class="placeholder-image" style="height: 300px;">[Image(s) of the Cup and its inscriptions]</div>
+    <p>[Insert text here describing the physical cup, its appearance, and the details of the inscriptions.]</p>
+</div>
+
+<div class="content-card">
+    <h2>Why?</h2>
+    <p>[Insert the brief story here, written by you, Greg, and Bruce, explaining why the cup was created.]</p>
+</div>
+
+<div class="content-card">
+    <h2>Where Has It Been?</h2>
+    <p>The cup travels with the winner each week. Here are some of the places it has been sighted.</p>
+    <div class="gallery">
+        <div class="placeholder-image">[Image from location 1]</div>
+        <div class="placeholder-image">[Image from location 2]</div>
+        <div class="placeholder-image">[Image from location 3]</div>
+        <div class="placeholder-image">[Image from location 4]</div>
+    </div>
+</div>
+---
+layout: default
+title: Video
+---
+
+<h1>Video Highlights</h1>
+
+<div class="content-card">
+    <h2>Match Footage</h2>
+    <p>As suggested, this could be a spot for video clips of close matches, 300 games, or other memorable moments. This could also link to or embed YouTube content.</p>
+    <div class="placeholder-image">[Placeholder for embedded video clip]</div>
+</div>
+GEM
+  remote: https://rubygems.org/
+  specs:
+    addressable (2.8.7)
+      public_suffix (>= 2.0.2, < 7.0)
+    colorator (1.1.0)
+    concurrent-ruby (1.3.4)
+    em-websocket (0.5.3)
+      eventmachine (>= 0.12.9)
+      http_parser.rb (~> 0)
+    eventmachine (1.2.7)
+    ffi (1.17.0)
+    forwardable-extended (2.6.0)
+    google-protobuf (3.25.5-x86_64-linux)
+    http_parser.rb (0.8.0)
+    i18n (1.14.6)
+      concurrent-ruby (~> 1.0)
+    jekyll (4.3.4)
+      addressable (~> 2.4)
+      colorator (~> 1.0)
+      em-websocket (~> 0.5)
+      i18n (~> 1.0)
+      jekyll-sass-converter (>= 2.0, < 4.0)
+      jekyll-watch (~> 2.0)
+      kramdown (~> 2.3, >= 2.3.1)
+      kramdown-parser-gfm (~> 1.0)
+      liquid (~> 4.0)
+      mercenary (>= 0.3.6, < 0.5)
+      pathutil (~> 0.9)
+      rouge (>= 3.0, < 5.0)
+      safe_yaml (~> 1.0)
+      terminal-table (>= 1.8, < 4.0)
+      webrick (~> 1.7)
+    jekyll-feed (0.17.0)
+      jekyll (>= 3.7, < 5.0)
+    jekyll-sass-converter (3.0.0)
+      sass-embedded (~> 1.54)
+    jekyll-seo-tag (2.8.0)
+      jekyll (>= 3.8, < 5.0)
+    jekyll-watch (2.2.1)
+      listen (~> 3.0)
+    kramdown (2.5.1)
+      rexml (>= 3.3.9)
+    kramdown-parser-gfm (1.1.0)
+      kramdown (~> 2.0)
+    liquid (4.0.4)
+    listen (3.9.0)
+      rb-fsevent (~> 0.10, >= 0.10.3)
+      rb-inotify (~> 0.9, >= 0.9.10)
+    mercenary (0.4.0)
+    minima (2.5.2)
+      jekyll (>= 3.5, < 5.0)
+      jekyll-feed (~> 0.9)
+      jekyll-seo-tag (~> 2.1)
+    pathutil (0.16.2)
+      forwardable-extended (~> 2.6)
+    public_suffix (6.0.1)
+    rake (13.2.1)
+    rb-fsevent (0.11.2)
+    rb-inotify (0.11.1)
+      ffi (~> 1.0)
+    rexml (3.3.9)
+    rouge (4.5.1)
+    safe_yaml (1.0.5)
+    sass-embedded (1.69.5)
+      google-protobuf (~> 3.23)
+      rake (>= 13.0.0)
+    terminal-table (3.0.2)
+      unicode-display_width (>= 1.1.1, < 3)
+    unicode-display_width (2.6.0)
+    webrick (1.9.1)
+
+PLATFORMS
+  x86_64-linux
+
+DEPENDENCIES
+  jekyll (~> 4.3)
+  minima (~> 2.5)
+  tzinfo-data
+
+BUNDLED WITH
+   2.6.9
+---
+layout: default
+title: Home
+---
+# 🏆 Dick Stein Practice Cup
+The official home for our weekly casual competition.
+
+---
+{% for winner in site.data.winners %}
+  {% if winner.current == true %}
+<div class="content-card champion-card">
+    <h2 style="border-bottom: none; text-align: center;">Current Champion</h2>
+    <h3 style="text-align: center; margin-top: 0;">{{ winner.name }}</h3>
+    <p style="text-align: center; margin-bottom: 0;"><strong>Week Of:</strong> {{ winner.week }} | <strong>Series:</strong> {{ winner.series }}</p>
+</div>
+  {% endif %}
+{% endfor %}
+
+## High Scores
+<div class="content-card">
+    <p>[A section to highlight high scores, like best series, 300 games, etc., will be added here.]</p>
+</div>
+
+## Past Results
+<div class="table-container">
+    <table>
+        <thead>
+            <tr>
+                <th>Winner</th>
+                <th>Week Of</th>
+                <th>Series</th>
+            </tr>
+        </thead>
+        <tbody>
+            {% for winner in site.data.winners %}
+            <tr>
+                <td>{{ winner.name }}</td>
+                <td>{{ winner.week }}</td>
+                <td>{{ winner.series }}</td>
+            </tr>
+            {% endfor %}
+        </tbody>
+    </table>
+</div>
+
+## Past Winner's Gallery
+<div class="content-card">
+    <p>A place to feature photos of our esteemed champions with the cup.</p>
+    <div class="gallery">
+        <div class="placeholder-image"></div>
+        <div class="placeholder-image"></div>
+        <div class="placeholder-image"></div>
+    </div>
+</div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Cup | Dick Stein Practice Cup</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site-container">
+        <header class="site-header">
+    <div class="header-content">
+        <a class="site-title" href="/">🎳 Dick Stein Practice Cup</a>
+        <nav>
+            <a href="/">History</a>
+            <a href="/the-cup/">The Cup</a>
+            <a href="/dick-stein/">About Dick Stein</a>
+            <a href="/video/">Video</a>
+            <a href="/products/">Products</a>
+        </nav>
+    </div>
+</header>
+
+        <main>
+            <h1>The Coveted Cup</h1>
+
+<div class="content-card">
+    <h2>What Is It?</h2>
+    <div class="placeholder-image" style="height: 300px;">[Image(s) of the Cup and its inscriptions]</div>
+    <p>[Insert text here describing the physical cup, its appearance, and the details of the inscriptions.]</p>
+</div>
+
+<div class="content-card">
+    <h2>Why?</h2>
+    <p>[Insert the brief story here, written by you, Greg, and Bruce, explaining why the cup was created.]</p>
+</div>
+
+<div class="content-card">
+    <h2>Where Has It Been?</h2>
+    <p>The cup travels with the winner each week. Here are some of the places it has been sighted.</p>
+    <div class="gallery">
+        <div class="placeholder-image">[Image from location 1]</div>
+        <div class="placeholder-image">[Image from location 2]</div>
+        <div class="placeholder-image">[Image from location 3]</div>
+        <div class="placeholder-image">[Image from location 4]</div>
+    </div>
+</div>
+
+        </main>
+        <footer>
+    <p>&copy; 2025 Dick Stein Practice Cup | <a href="https://bergerj.com">Created by Jacob Berger</a></p>
+</footer>
+
+    </div>
+</body>
+</html>
+source "https://rubygems.org"
+
+gem "jekyll", "~> 4.3"
+
+# This is the default theme for Jekyll, you can change it.
+gem "minima", "~> 2.5"
+
+# Windows does not include zoneinfo files, so bundle the tzinfo-data gem
+gem "tzinfo-data", platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+# To add a new winner, copy a block and update the details.
+# To mark a winner as current, add `current: true`. Remove it from the previous winner.
+# The homepage will automatically display the winner with "current: true".
+
+- name: Bruce
+  week: "July 28, 2025"
+  series: 680
+  current: true
+
+- name: Jacob
+  week: "July 21, 2025"
+  series: 655
+
+- name: Joseph
+  week: "July 14, 2025"
+  series: 710
+:root {
+    --bg-color: #f7f9fc;
+    --text-color: #333;
+    --header-color: #2c3e50;
+    --primary-color: #3498db;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.site-container {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Header and Navigation */
+.site-header {
+    background: var(--card-bg);
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    margin-bottom: 2.5rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 400;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Main Content and Page Styles */
+main {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: var(--header-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p, li {
+    line-height: 1.6;
+    color: #555;
+    text-align: left;
+}
+
+.content-card {
+    background: var(--card-bg);
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Placeholder Styles */
+.placeholder-image {
+    background: #e9ecef;
+    border: 1px dashed var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    height: 200px;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* Champion and Table Styles */
+.champion-card {
+    background: #eaf5fc;
+    border: 1px solid var(--primary-color);
+}
+
+.champion-card h3 {
+    color: var(--primary-color);
+}
+
+.table-container {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+thead {
+    background-color: var(--bg-color);
+    font-weight: 600;
+}
+
+th {
+    color: var(--header-color);
+}
+
+tbody tr:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+tbody tr:hover {
+    background-color: #ecf0f1;
+}
+
+td:nth-child(1) { font-weight: 600; } /* Winner Name */
+td:nth-child(3) { font-weight: 600; color: var(--primary-color); } /* Series Score */
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #95a5a6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+:root {
+    --bg-color: #f7f9fc;
+    --text-color: #333;
+    --header-color: #2c3e50;
+    --primary-color: #3498db;
+    --border-color: #e0e0e0;
+    --shadow-color: rgba(0, 0, 0, 0.08);
+    --card-bg: #ffffff;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.site-container {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Header and Navigation */
+.site-header {
+    background: var(--card-bg);
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    margin-bottom: 2.5rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 400;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Main Content and Page Styles */
+main {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: var(--header-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p, li {
+    line-height: 1.6;
+    color: #555;
+    text-align: left;
+}
+
+.content-card {
+    background: var(--card-bg);
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Placeholder Styles */
+.placeholder-image {
+    background: #e9ecef;
+    border: 1px dashed var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    height: 200px;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* Champion and Table Styles */
+.champion-card {
+    background: #eaf5fc;
+    border: 1px solid var(--primary-color);
+}
+
+.champion-card h3 {
+    color: var(--primary-color);
+}
+
+.table-container {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+thead {
+    background-color: var(--bg-color);
+    font-weight: 600;
+}
+
+th {
+    color: var(--header-color);
+}
+
+tbody tr:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+tbody tr:hover {
+    background-color: #ecf0f1;
+}
+
+td:nth-child(1) { font-weight: 600; } /* Winner Name */
+td:nth-child(3) { font-weight: 600; color: var(--primary-color); } /* Series Score */
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #95a5a6;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>{{ page.title }} | {{ site.title }}</title>
+    <link rel="stylesheet" href="/assets/css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="site-container">
+        {% include header.html %}
+        <main>
+            {{ content }}
+        </main>
+        {% include footer.html %}
+    </div>
+</body>
+</html>
+<footer>
+    <p>&copy; {{ site.time | date: '%Y' }} {{ site.title }} | <a href="https://bergerj.com">Created by Jacob Berger</a></p>
+</footer>
+<header class="site-header">
+    <div class="header-content">
+        <a class="site-title" href="/">🎳 Dick Stein Practice Cup</a>
+        <nav>
+            <a href="/">History</a>
+            <a href="/the-cup/">The Cup</a>
+            <a href="/dick-stein/">About Dick Stein</a>
+            <a href="/video/">Video</a>
+            <a href="/products/">Products</a>
+        </nav>
+    </div>
+</header>

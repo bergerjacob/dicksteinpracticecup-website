@@ -1,0 +1,183 @@
+:root {
+    --bg-color: #e8e4d9;
+    --text-color: #3F3F3F;
+    --header-color: #3F3F3F;
+    --primary-color: #6A7A5C;
+    --border-color: #d1cdc4;
+    --shadow-color: rgba(0, 0, 0, 0.1);
+    --card-bg: #f4f1ea;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    margin: 0;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.site-container {
+    max-width: 900px;
+    width: 100%;
+}
+
+/* Header and Navigation */
+.site-header {
+    background: var(--card-bg);
+    padding: 15px 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    margin-bottom: 2.5rem;
+}
+
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.site-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    color: var(--header-color);
+    text-decoration: none;
+}
+
+nav a {
+    color: var(--text-color);
+    text-decoration: none;
+    margin-left: 20px;
+    font-weight: 400;
+    transition: color 0.2s ease-in-out;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+}
+
+/* Main Content and Page Styles */
+main {
+    text-align: center;
+}
+
+h1, h2, h3 {
+    color: var(--header-color);
+}
+
+h1 {
+    font-size: 2.5rem;
+    margin-bottom: 0.5rem;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin-bottom: 1.5rem;
+    border-bottom: 2px solid var(--primary-color);
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+p, li {
+    line-height: 1.6;
+    color: #5E5E5E; /* A slightly lighter gray for body text */
+    text-align: left;
+}
+
+.content-card {
+    background: var(--card-bg);
+    padding: 25px 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    margin-bottom: 2rem;
+    text-align: left;
+}
+
+/* Placeholder Styles */
+.placeholder-image {
+    background: #e9ecef;
+    border: 1px dashed var(--border-color);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #6c757d;
+    height: 200px;
+    width: 100%;
+    margin: 1rem 0;
+}
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    gap: 1rem;
+}
+
+/* Champion and Table Styles */
+.champion-card {
+    background: #e6e9e4; /* Light version of the new primary color */
+    border: 1px solid var(--primary-color);
+}
+
+.champion-card h3 {
+    color: var(--primary-color);
+}
+
+.table-container {
+    background-color: var(--card-bg);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px var(--shadow-color);
+    overflow: hidden;
+    border: 1px solid var(--border-color);
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+th, td {
+    padding: 15px 20px;
+    text-align: left;
+}
+
+thead {
+    background-color: var(--bg-color);
+    font-weight: 600;
+}
+
+th {
+    color: var(--header-color);
+}
+
+tbody tr:not(:last-child) {
+    border-bottom: 1px solid var(--border-color);
+}
+
+tbody tr:hover {
+    background-color: #e9e6e1; /* Darker version of the card background for hover */
+}
+
+td:nth-child(1) { font-weight: 600; } /* Winner Name */
+td:nth-child(3) { font-weight: 600; color: var(--primary-color); } /* Series Score */
+
+/* Footer */
+footer {
+    margin-top: 3rem;
+    font-size: 0.9rem;
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+}
+
+footer a {
+    color: inherit;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}

@@ -1,0 +1,28 @@
+---
+layout: default
+title: The Cup
+---
+
+<h1>The Coveted Cup</h1>
+
+<div class="content-card">
+    <h2>What Is It?</h2>
+    <div class="placeholder-image" style="height: 300px;">[Image(s) of the Cup and its inscriptions]</div>
+    <p>[Insert text here describing the physical cup, its appearance, and the details of the inscriptions.]</p>
+</div>
+
+<div class="content-card">
+    <h2>Why?</h2>
+    <p>[Insert the brief story here, written by you, Greg, and Bruce, explaining why the cup was created.]</p>
+</div>
+
+<div class="content-card">
+    <h2>Where Has It Been?</h2>
+    <p>The cup travels with the winner each week. Here are some of the places it has been sighted.</p>
+    <div class="gallery">
+        <div class="placeholder-image">[Image from location 1]</div>
+        <div class="placeholder-image">[Image from location 2]</div>
+        <div class="placeholder-image">[Image from location 3]</div>
+        <div class="placeholder-image">[Image from location 4]</div>
+    </div>
+</div>
