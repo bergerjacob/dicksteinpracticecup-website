@@ -6,6 +6,7 @@ baseurl: ""                          # Leave this blank for a custom domain
 
 # Build settings
 markdown: kramdown
+permalink: pretty
 plugins:
   - jekyll-feed
 
