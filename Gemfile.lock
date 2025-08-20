@@ -78,6 +78,7 @@ PLATFORMS
 DEPENDENCIES
   jekyll (~> 4.3)
   minima (~> 2.5)
+  rake
   tzinfo-data
 
 BUNDLED WITH
