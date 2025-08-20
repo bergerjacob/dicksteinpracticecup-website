@@ -18,11 +18,14 @@ title: The Cup
 
 <div class="content-card">
     <h2>Where Has It Been?</h2>
-    <p>The cup travels with the winner each week. Here are some of the places it has been sighted.</p>
+    <p>The cup travels with the winner each week. Here are some of the places it has been sighted. New photos added to the locations folder will appear here automatically.</p>
     <div class="gallery">
-        <div class="placeholder-image">[Image from location 1]</div>
-        <div class="placeholder-image">[Image from location 2]</div>
-        <div class="placeholder-image">[Image from location 3]</div>
-        <div class="placeholder-image">[Image from location 4]</div>
+        {% for file in site.static_files %}
+            {% if file.path contains '/assets/images/trophy-locations/' %}
+                <div class="gallery-item">
+                    <img src="{{ file.path | relative_url }}" alt="Trophy Location Photo">
+                </div>
+            {% endif %}
+        {% endfor %}
     </div>
 </div>

@@ -16,39 +16,26 @@ The official home for our weekly casual competition.
   {% endif %}
 {% endfor %}
 
-## High Scores
+## Seasonal Results & Stats
 <div class="content-card">
-    <p>[A section to highlight high scores, like best series, 300 games, etc., will be added here.]</p>
-</div>
-
-## Past Results
-<div class="table-container">
-    <table>
-        <thead>
-            <tr>
-                <th>Winner</th>
-                <th>Week Of</th>
-                <th>Series</th>
-            </tr>
-        </thead>
-        <tbody>
-            {% for winner in site.data.winners %}
-            <tr>
-                <td>{{ winner.name }}</td>
-                <td>{{ winner.week }}</td>
-                <td>{{ winner.series }}</td>
-            </tr>
-            {% endfor %}
-        </tbody>
-    </table>
+    <p>Download the complete historical results for each six-month season below.</p>
+    <ul>
+        <li><a href="/assets/downloads/DS PC Late 2024-2.xlsx" download>Late 2024 Season Results</a></li>
+        <li><a href="/assets/downloads/DS PC Early 2025.xlsx" download>Early 2025 Season Results</a></li>
+        <li><a href="/assets/downloads/DS PC Late 2025.xlsx" download>Late 2025 Season Results (Ongoing)</a></li>
+    </ul>
 </div>
 
 ## Past Winner's Gallery
 <div class="content-card">
-    <p>A place to feature photos of our esteemed champions with the cup.</p>
+    <p>A place to feature photos of our esteemed champions with the cup. New photos added to the gallery folder will appear here automatically.</p>
     <div class="gallery">
-        <div class="placeholder-image"></div>
-        <div class="placeholder-image"></div>
-        <div class="placeholder-image"></div>
+        {% for file in site.static_files %}
+            {% if file.path contains '/assets/images/winners-gallery/' %}
+                <div class="gallery-item">
+                    <img src="{{ file.path | relative_url }}" alt="Past Winner Photo">
+                </div>
+            {% endif %}
+        {% endfor %}
     </div>
 </div>

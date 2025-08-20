@@ -11,6 +11,7 @@ GEM
     eventmachine (1.2.7)
     ffi (1.17.0)
     forwardable-extended (2.6.0)
+    google-protobuf (3.25.5-arm64-darwin)
     google-protobuf (3.25.5-x86_64-linux)
     http_parser.rb (0.8.0)
     i18n (1.14.6)
@@ -71,6 +72,7 @@ GEM
     webrick (1.9.1)
 
 PLATFORMS
+  arm64-darwin-23
   x86_64-linux
 
 DEPENDENCIES
@@ -79,4 +81,4 @@ DEPENDENCIES
   tzinfo-data
 
 BUNDLED WITH
-   2.6.9
+   2.5.3
