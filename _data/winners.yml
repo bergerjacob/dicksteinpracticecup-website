@@ -1,7 +1,11 @@
+- name: Test Winner
+  week: 8/21/2025
+  series: 675
+  current: true
 - name: '2'
   week: '3'
   series: 4
-  current: true
+  current: false
 - name: Bruce
   week: July 28, 2025
   series: 680
