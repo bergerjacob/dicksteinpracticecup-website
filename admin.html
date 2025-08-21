@@ -1,31 +1,31 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>Admin Panel - Dick Stein Practice Cup</title>
-    <link rel="stylesheet" href="/assets/css/style.css">
-</head>
-<body>
-    <div class="site-container" style="max-width: 600px; margin: 40px auto;">
-        <main>
-            <h1>Update Current Champion</h1>
-            <div class="content-card">
-                <form name="update-champion" method="POST" data-netlify="true">
-                    <p>
-                        <label>Winner's Name: <input type="text" name="name" required /></label>
-                    </p>
-                    <p>
-                        <label>Week Of: <input type="text" name="week" required /></label>
-                    </p>
-                    <p>
-                        <label>Series Score: <input type="number" name="series" required /></label>
-                    </p>
-                    <p>
-                        <button type="submit">Submit New Champion</button>
-                    </p>
-                </form>
-            </div>
-        </main>
-    </div>
-</body>
+    <head>
+        <meta charset="UTF-8">
+        <title>Admin Panel - Dick Stein Practice Cup</title>
+        <link rel="stylesheet" href="/assets/css/style.css">
+    </head>
+    <body>
+        <div class="site-container" style="max-width: 600px; margin: 40px auto;">
+            <main>
+                <h1>Update Current Champion</h1>
+                <div class="content-card">
+                    <form name="update-champion" method="POST" data-netlify="true" action="/thank-you/">
+                        <p>
+                            <label>Winner's Name: <input type="text" name="name" required /></label>
+                        </p>
+                        <p>
+                            <label>Week Of: <input type="text" name="week" required /></label>
+                        </p>
+                        <p>
+                            <label>Series Score: <input type="number" name="series" required /></label>
+                        </p>
+                        <p>
+                            <button type="submit">Submit New Champion</button>
+                        </p>
+                    </form>
+                </div>
+            </main>
+        </div>
+    </body>
 </html>
