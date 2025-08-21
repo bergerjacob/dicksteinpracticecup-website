@@ -9,7 +9,7 @@ exports.handler = async function(event, context) {
             const fields = {};
             let fileData = {};
 
-            const busboy = Busboy({
+            const busboy = Busboy.default({
                 headers: { "content-type": event.headers["content-type"] },
             });
 
