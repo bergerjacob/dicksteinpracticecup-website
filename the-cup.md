@@ -20,12 +20,11 @@ title: The Cup
     <h2>Where Has It Been?</h2>
     <p>The cup travels with the winner each week. Here are some of the places it has been sighted. New photos added to the locations folder will appear here automatically.</p>
     <div class="gallery">
-        {% for file in site.static_files %}
-            {% if file.path contains '/assets/images/trophy-locations/' %}
-                <div class="gallery-item">
-                    <img src="{{ file.path | relative_url }}" alt="Trophy Location Photo">
-                </div>
-            {% endif %}
+        {% assign sorted_images = site.static_files | where_exp: "item", "item.path contains '/assets/images/trophy-locations/'" | sort: 'path' | reverse %}
+        {% for file in sorted_images %}
+            <div class="gallery-item">
+                <img src="{{ file.path | relative_url }}" alt="Trophy Location Photo">
+            </div>
         {% endfor %}
     </div>
 </div>

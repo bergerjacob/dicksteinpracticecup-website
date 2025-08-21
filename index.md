@@ -30,12 +30,11 @@ The official home for our weekly casual competition.
 <div class="content-card">
     <p>A place to feature photos of our esteemed champions with the cup. New photos added to the gallery folder will appear here automatically.</p>
     <div class="gallery">
-        {% for file in site.static_files %}
-            {% if file.path contains '/assets/images/winners-gallery/' %}
-                <div class="gallery-item">
-                    <img src="{{ file.path | relative_url }}" alt="Past Winner Photo">
-                </div>
-            {% endif %}
+        {% assign sorted_images = site.static_files | where_exp: "item", "item.path contains '/assets/images/winners-gallery/'" | sort: 'path' | reverse %}
+        {% for file in sorted_images %}
+            <div class="gallery-item">
+                <img src="{{ file.path | relative_url }}" alt="Past Winner Photo">
+            </div>
         {% endfor %}
     </div>
 </div>
