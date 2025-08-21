@@ -55,11 +55,11 @@ exports.handler = async function(event, context) {
             throw new Error("No file was uploaded.");
         }
 
-        // Create a sortable and unique filename
+        // Create a sortable filename using the original name
         const date = new Date().toISOString().split('T')[0]; // YYYY-MM-DD
-        const uniqueId = uuidv4().split('-')[0]; // Short unique ID
-        const extension = fileData.filename.split('.').pop();
-        const newFilename = `${date}-${uniqueId}.${extension}`;
+        // Sanitize the original filename to be URL-safe
+        const originalFilename = fileData.filename.replace(/[^a-zA-Z0-9.\-_]/g, '-').replace(/-+/g, '-');
+        const newFilename = `${date}-${originalFilename}`;
 
         const filePath = `assets/images/${gallery}/${newFilename}`;
         const contentBase64 = fileData.content.toString("base64");
