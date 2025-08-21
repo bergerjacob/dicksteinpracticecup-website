@@ -1,16 +1,18 @@
-# To add a new winner, copy a block and update the details.
-# To mark a winner as current, add `current: true`. Remove it from the previous winner.
-# The homepage will automatically display the winner with "current: true".
-
-- name: Bruce
-  week: "July 28, 2025"
-  series: 680
+- name: Test Winner
+  week: 8/21/2025
+  series: 675
   current: true
-
+- name: '2'
+  week: '3'
+  series: 4
+  current: false
+- name: Bruce
+  week: July 28, 2025
+  series: 680
+  current: false
 - name: Jacob
-  week: "July 21, 2025"
+  week: July 21, 2025
   series: 655
-
 - name: Joseph
-  week: "July 14, 2025"
+  week: July 14, 2025
   series: 710
