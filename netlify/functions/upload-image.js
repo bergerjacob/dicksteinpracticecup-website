@@ -1,44 +1,44 @@
-const { Octokit } = await import("@octokit/rest");
-const { v4: uuidv4 } = await import("uuid");
-const Busboy = await import("busboy");
-
-// Helper to parse multipart form data
-const parseMultipartForm = (event) => {
-    return new Promise((resolve) => {
-        const fields = {};
-        let fileData = {};
-
-        const busboy = Busboy({
-            headers: { "content-type": event.headers["content-type"] },
-        });
-
-        busboy.on("file", (fieldname, file, filename, encoding, mimetype) => {
-            let buffer = Buffer.alloc(0);
-            file.on("data", (data) => {
-                buffer = Buffer.concat([buffer, data]);
-            });
-            file.on("end", () => {
-                fileData = {
-                    content: buffer,
-                    filename: filename.filename,
-                    contentType: mimetype,
-                };
-            });
-        });
-
-        busboy.on("field", (fieldname, val) => {
-            fields[fieldname] = val;
-        });
-
-        busboy.on("finish", () => {
-            resolve({ fields, fileData });
-        });
-
-        busboy.end(Buffer.from(event.body, "base64"));
-    });
-};
-
 exports.handler = async function(event, context) {
+    const { Octokit } = await import("@octokit/rest");
+    const { v4: uuidv4 } = await import("uuid");
+    const Busboy = await import("busboy");
+
+    // Helper to parse multipart form data
+    const parseMultipartForm = (event) => {
+        return new Promise((resolve) => {
+            const fields = {};
+            let fileData = {};
+
+            const busboy = Busboy({
+                headers: { "content-type": event.headers["content-type"] },
+            });
+
+            busboy.on("file", (fieldname, file, filename, encoding, mimetype) => {
+                let buffer = Buffer.alloc(0);
+                file.on("data", (data) => {
+                    buffer = Buffer.concat([buffer, data]);
+                });
+                file.on("end", () => {
+                    fileData = {
+                        content: buffer,
+                        filename: filename.filename,
+                        contentType: mimetype,
+                    };
+                });
+            });
+
+            busboy.on("field", (fieldname, val) => {
+                fields[fieldname] = val;
+            });
+
+            busboy.on("finish", () => {
+                resolve({ fields, fileData });
+            });
+
+            busboy.end(Buffer.from(event.body, "base64"));
+        });
+    };
+
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
     const repoOwner = "bergerjacob";
     const repoName = "dicksteinpracticecup-website";
