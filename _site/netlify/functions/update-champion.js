@@ -1,7 +1,7 @@
-const { Octokit } = require("@octokit/rest");
-const yaml = require("js-yaml");
-
 exports.handler = async function(event, context) {
+    const { Octokit } = await import("@octokit/rest");
+    const yaml = await import("js-yaml");
+
     // 1. Authenticate with GitHub
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
     const repoOwner = "bergerjacob"; // Your GitHub username
@@ -20,7 +20,6 @@ exports.handler = async function(event, context) {
         const winners = yaml.load(content);
 
         // 3. Prepare the new winner data from the fetch request
-        // The structure is now simpler: event.body contains the JSON string
         const formPayload = JSON.parse(event.body).payload.data;
         const newWinner = {
             name: formPayload.name,
@@ -49,8 +48,6 @@ exports.handler = async function(event, context) {
             sha: fileData.sha,
         });
 
-        // The redirect is now handled by the client-side JS,
-        // so the function just needs to return a success status.
         return {
             statusCode: 200,
             body: "Champion updated successfully!",

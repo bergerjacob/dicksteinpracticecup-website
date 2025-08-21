@@ -8,59 +8,93 @@
 <body>
     <div class="site-container" style="max-width: 600px; margin: 40px auto;">
         <main>
-            <h1>Update Current Champion</h1>
+            <h1>Admin Panel</h1>
+
             <div class="content-card">
+                <h2>Update Current Champion</h2>
                 <form id="update-champion-form" method="POST">
-                    <p>
-                        <label>Winner's Name: <input type="text" name="name" required /></label>
-                    </p>
-                    <p>
-                        <label>Week Of: <input type="text" name="week" required /></label>
-                    </p>
-                    <p>
-                        <label>Series Score: <input type="number" name="series" required /></label>
-                    </p>
-                    <p>
-                        <button type="submit">Submit New Champion</button>
-                    </p>
+                    <p><label>Winner's Name: <input type="text" name="name" required /></label></p>
+                    <p><label>Week Of: <input type="text" name="week" required /></label></p>
+                    <p><label>Series Score: <input type="number" name="series" required /></label></p>
+                    <p><button type="submit">Submit New Champion</button></p>
                 </form>
-                <div id="form-status" style="margin-top: 15px;"></div>
+                <div id="champion-form-status" class="form-status"></div>
+            </div>
+
+            <div class="content-card">
+                <h2>Upload to Winner's Gallery</h2>
+                <form id="upload-winner-photo-form" method="POST">
+                    <input type="hidden" name="gallery" value="winners-gallery">
+                    <p><label>Photo (JPEG or PNG): <input type="file" name="photo" accept="image/jpeg, image/png" required /></label></p>
+                    <p><button type="submit">Upload Winner Photo</button></p>
+                </form>
+                <div id="winner-photo-form-status" class="form-status"></div>
+            </div>
+
+            <div class="content-card">
+                <h2>Upload to Trophy Locations Gallery</h2>
+                <form id="upload-trophy-photo-form" method="POST">
+                    <input type="hidden" name="gallery" value="trophy-locations">
+                    <p><label>Photo (JPEG or PNG): <input type="file" name="photo" accept="image/jpeg, image/png" required /></label></p>
+                    <p><button type="submit">Upload Trophy Photo</button></p>
+                </form>
+                <div id="trophy-photo-form-status" class="form-status"></div>
             </div>
         </main>
     </div>
 
     <script>
-      const form = document.getElementById('update-champion-form');
-      const statusDiv = document.getElementById('form-status');
-
-      form.addEventListener('submit', async (event) => {
-        event.preventDefault(); // Prevent the default browser form submission
-
+      // Helper function for all form submissions
+      async function handleFormSubmit(form, statusDiv, endpoint) {
+        event.preventDefault();
         const formData = new FormData(form);
-        const data = Object.fromEntries(formData.entries());
+        let body;
+        let headers = {};
+
+        // Check if the form contains a file
+        if (formData.has('photo') && formData.get('photo').size > 0) {
+            body = formData; // Send as multipart/form-data
+        } else {
+            const data = Object.fromEntries(formData.entries());
+            body = JSON.stringify({ payload: { data } });
+            headers['Content-Type'] = 'application/json';
+        }
 
         statusDiv.textContent = 'Submitting, please wait...';
         statusDiv.style.color = 'blue';
 
         try {
-          const response = await fetch('/.netlify/functions/update-champion', {
-            method: 'POST',
-            headers: { 'Content-Type': 'application/json' },
-            body: JSON.stringify({ payload: { data } }) // Match the function's expected structure
-          });
-
-          if (!response.ok) {
-            throw new Error(`Server responded with ${response.status}: ${await response.text()}`);
-          }
-
-          // If the function succeeds, redirect to the thank you page
-          window.location.href = '/thank-you/';
-
+            const response = await fetch(endpoint, { method: 'POST', headers, body });
+            if (!response.ok) {
+                throw new Error(`Server responded with ${response.status}: ${await response.text()}`);
+            }
+            window.location.href = '/thank-you/';
         } catch (error) {
-          console.error('Submission failed:', error);
-          statusDiv.textContent = `Error: ${error.message}`;
-          statusDiv.style.color = 'red';
+            console.error('Submission failed:', error);
+            statusDiv.textContent = `Error: ${error.message}`;
+            statusDiv.style.color = 'red';
         }
+      }
+
+      // Champion Form Handler
+      const championForm = document.getElementById('update-champion-form');
+      championForm.addEventListener('submit', (event) => {
+        const statusDiv = document.getElementById('champion-form-status');
+        handleFormSubmit(event.target, statusDiv, '/.netlify/functions/update-champion');
+      });
+
+      // Winner Photo Form Handler
+      const winnerPhotoForm = document.getElementById('upload-winner-photo-form');
+      winnerPhotoForm.addEventListener('submit', (event) => {
+        const statusDiv = document.getElementById('winner-photo-form-status');
+        handleFormSubmit(event.target, statusDiv, '/.netlify/functions/upload-image');
+      });
+
+      // Trophy Photo Form Handler
+      const trophyPhotoForm = document.getElementById('upload-trophy-photo-form');
+      trophyPhotoForm.addEventListener('submit', (event) => {
+        const statusDiv = document.getElementById('trophy-photo-form-status');
+        handleFormSubmit(event.target, statusDiv, '/.netlify/functions/upload-image');
       });
     </script>
 </body>
