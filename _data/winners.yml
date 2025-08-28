@@ -1,7 +1,11 @@
 - name: Derral Smith
+  week: 8/28/25
+  series: 680
+  current: true
+- name: Derral Smith
   week: 8/21/25
   series: 703
-  current: true
+  current: false
 - name: Test Winner
   week: 8/21/2025
   series: 675
