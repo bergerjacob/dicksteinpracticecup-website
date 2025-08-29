@@ -12,7 +12,6 @@
 
             <div class="content-card">
                 <h2>Add a New Player</h2>
-                <p>Add a player to the roster so they can be selected as a winner. Their profile will appear on the 'Players' page.</p>
                 <form id="add-player-form" method="POST">
                     <p><label>Player's Name: <input type="text" name="name" required /></label></p>
                     <p><label>Player's Photo: <input type="file" name="photo" accept="image/jpeg, image/png" required /></label></p>
@@ -24,9 +23,8 @@
 
             <div class="content-card">
                 <h2>Update Current Champion</h2>
-                <p>Select a player from the list of all added participants.</p>
                 <form id="update-champion-form" method="POST">
-                    <p><label>Winner's Name: 
+                    <p><label>Winner's Name:
                         <select name="name" id="player-select" required>
                             <option value="">Loading players...</option>
                         </select>
@@ -46,6 +44,19 @@
                     <p><button type="submit">Upload Season File</button></p>
                 </form>
                 <div id="season-form-status" class="form-status"></div>
+            </div>
+            
+            <div class="content-card">
+                <h2>Delete a Season (Irreversible)</h2>
+                <form id="delete-season-form" method="POST">
+                    <p><label>Season to Delete:
+                        <select name="season_name" id="season-select" required>
+                            <option value="">Loading seasons...</option>
+                        </select>
+                    </label></p>
+                    <p><button type="submit" style="background-color: #d9534f; border-color: #d43f3a; color: white;">Delete This Season Forever</button></p>
+                </form>
+                <div id="delete-season-form-status" class="form-status"></div>
             </div>
         </main>
     </div>
@@ -69,7 +80,29 @@
             console.error(error);
         }
       }
-      document.addEventListener('DOMContentLoaded', loadPlayers);
+
+      async function loadSeasons() {
+        try {
+            const response = await fetch('/.netlify/functions/get-seasons');
+            if (!response.ok) throw new Error('Failed to load seasons');
+            const seasons = await response.json();
+            const seasonSelect = document.getElementById('season-select');
+            seasonSelect.innerHTML = '<option value="">Select a season</option>';
+            seasons.forEach(season => {
+                const option = document.createElement('option');
+                option.value = season;
+                option.textContent = season;
+                seasonSelect.appendChild(option);
+            });
+        } catch (error) {
+            console.error(error);
+        }
+      }
+      
+      document.addEventListener('DOMContentLoaded', () => {
+        loadPlayers();
+        loadSeasons();
+      });
 
       // --- Form Submission Logic ---
       async function handleFormSubmit(event, statusDiv, endpoint) {
@@ -79,7 +112,6 @@
         let body;
         let headers = {};
 
-        // Use FormData for file uploads, otherwise use JSON
         if (form.querySelector('input[type="file"]')) {
             body = formData;
         } else {
@@ -114,6 +146,14 @@
 
       document.getElementById('upload-season-form').addEventListener('submit', e => {
         handleFormSubmit(e, document.getElementById('season-form-status'), '/.netlify/functions/upload-season');
+      });
+
+      document.getElementById('delete-season-form').addEventListener('submit', e => {
+          if (confirm('Are you absolutely sure you want to permanently delete this season and all its data? This action cannot be undone.')) {
+              handleFormSubmit(e, document.getElementById('delete-season-form-status'), '/.netlify/functions/delete-season');
+          } else {
+              e.preventDefault();
+          }
       });
     </script>
 </body>
