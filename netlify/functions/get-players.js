@@ -1,7 +1,7 @@
-const { Octokit } = await import("@octokit/rest");
 const yaml = require("js-yaml");
 
 exports.handler = async function(event, context) {
+    const { Octokit } = await import("@octokit/rest");
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
     const repoOwner = "bergerjacob";
     const repoName = "dicksteinpracticecup-website";

@@ -1,4 +1,3 @@
-const { Octokit } = await import("@octokit/rest");
 const yaml = require("js-yaml");
 const Busboy = require("busboy");
 
@@ -20,6 +19,7 @@ const parseMultipartForm = (event) => new Promise((resolve) => {
 });
 
 exports.handler = async function(event, context) {
+    const { Octokit } = await import("@octokit/rest");
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
 
     try {
