@@ -1,7 +1,11 @@
+- name: Test Player
+  week: 8/29/25
+  series: 999
+  current: true
 - name: Derral Smith
   week: 8/28/25
   series: 680
-  current: true
+  current: false
 - name: Derral Smith
   week: 8/21/25
   series: 703
