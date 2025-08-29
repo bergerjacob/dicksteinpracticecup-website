@@ -24,7 +24,13 @@ layout: default
             {% for row in season_data %}
             <tr>
                 {% for pair in row %}
-                    <td>{{ pair[1] }}</td>
+                    <td>
+                        {% if pair[0] == 'Date' %}
+                            {{ pair[1] | date: "%m/%d/%Y" }}
+                        {% else %}
+                            {{ pair[1] }}
+                        {% endif %}
+                    </td>
                 {% endfor %}
             </tr>
             {% endfor %}
