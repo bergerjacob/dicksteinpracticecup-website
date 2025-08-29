@@ -1,4 +1,4 @@
-const { Octokit } = require("@octokit/rest");
+const { Octokit } = await import("@octokit/rest");
 const yaml = require("js-yaml");
 const xlsx = require("xlsx");
 const Busboy = require("busboy");
