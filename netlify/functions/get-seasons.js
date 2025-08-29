@@ -14,6 +14,18 @@ exports.handler = async function(event, context) {
 
         const seasonNames = files.map(file => file.name.replace('.yml', ''));
 
+        // Custom sort for chronological order
+        seasonNames.sort((a, b) => {
+            const [aPeriod, aYear] = a.split('-');
+            const [bPeriod, bYear] = b.split('-');
+
+            if (aYear !== bYear) {
+                return aYear.localeCompare(bYear); // Sort by year first
+            }
+            // If years are the same, 'early' comes before 'late'
+            return aPeriod.localeCompare(bPeriod);
+        });
+
         return {
             statusCode: 200,
             headers: { "Content-Type": "application/json" },
