@@ -1,62 +1,48 @@
-exports.handler = async function(event, context) {
-    const { Octokit } = await import("@octokit/rest");
-    const yaml = await import("js-yaml");
+const { Octokit } = require("@octokit/rest");
+const yaml = require("js-yaml");
 
-    // 1. Authenticate with GitHub
+const repoOwner = "bergerjacob";
+const repoName = "dicksteinpracticecup-website";
+
+exports.handler = async function(event, context) {
     const octokit = new Octokit({ auth: process.env.GITHUB_TOKEN });
-    const repoOwner = "bergerjacob"; // Your GitHub username
-    const repoName = "dicksteinpracticecup-website"; // Your repo name
-    const filePath = "_data/winners.yml";
 
     try {
-        // 2. Get the current winners.yml file from GitHub
-        const { data: fileData } = await octokit.repos.getContent({
-            owner: repoOwner,
-            repo: repoName,
-            path: filePath,
+        const fields = JSON.parse(event.body);
+        const winnersFilePath = "_data/winners.yml";
+
+        const { data: winnersFile } = await octokit.repos.getContent({
+            owner: repoOwner, repo: repoName, path: winnersFilePath
         });
+        const winners = yaml.load(Buffer.from(winnersFile.content, "base64").toString("utf8"));
 
-        const content = Buffer.from(fileData.content, "base64").toString("utf8");
-        const winners = yaml.load(content);
-
-        // 3. Prepare the new winner data from the fetch request
-        const formPayload = JSON.parse(event.body).payload.data;
         const newWinner = {
-            name: formPayload.name,
-            week: formPayload.week,
-            series: parseInt(formPayload.series, 10),
+            name: fields.name,
+            week: fields.week,
+            series: parseInt(fields.series, 10),
             current: true,
         };
 
-        // 4. Update the winners list
+        // Set previous winner to not current
         const currentWinner = winners.find(w => w.current === true);
         if (currentWinner) {
             currentWinner.current = false;
         }
-        winners.unshift(newWinner);
 
-        const updatedContent = yaml.dump(winners);
-        const updatedContentBase64 = Buffer.from(updatedContent).toString("base64");
+        winners.unshift(newWinner); // Add new winner to the top
 
-        // 5. Commit the updated file back to GitHub
+        const updatedWinnersContent = Buffer.from(yaml.dump(winners)).toString("base64");
+
         await octokit.repos.createOrUpdateFileContents({
-            owner: repoOwner,
-            repo: repoName,
-            path: filePath,
+            owner: repoOwner, repo: repoName, path: winnersFilePath,
             message: `feat: Update champion to ${newWinner.name}`,
-            content: updatedContentBase64,
-            sha: fileData.sha,
+            content: updatedWinnersContent, sha: winnersFile.sha,
         });
 
-        return {
-            statusCode: 200,
-            body: "Champion updated successfully!",
-        };
+        return { statusCode: 200, body: "Champion updated successfully!" };
+
     } catch (error) {
         console.error(error);
-        return {
-            statusCode: 500,
-            body: `Error updating champion: ${error.message}`,
-        };
+        return { statusCode: 500, body: `Error: ${error.message}` };
     }
 };

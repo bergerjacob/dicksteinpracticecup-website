@@ -8,12 +8,15 @@ title: The Cup
 <div class="content-card">
     <h2>What Is It?</h2>
     <div class="placeholder-image" style="height: 300px;">[Image(s) of the Cup and its inscriptions]</div>
-    <p>[Insert text here describing the physical cup, its appearance, and the details of the inscriptions.]</p>
+    <p>The trophy features a base, a weird sort of hanger thing that looked like Dick Stein’s cane, and a couple of small chalk boards to depict current High Score + High Series. The winner's names are added each week with a Dymo label maker.</p>
+    <p>On the inside of the cane is the inscription: “This cane may be removed only by Dick Stein for admonishment as needed”. On the outside: “ Warning!! Emergency Use Only!!”.</p>
 </div>
 
 <div class="content-card">
-    <h2>Why?</h2>
-    <p>[Insert the brief story here, written by you, Greg, and Bruce, explaining why the cup was created.]</p>
+    <h2>Why the Practice Cup?</h2>
+    <p>Back in the early summer of 2024, Joe Berger, Greg Bingham and myself (Bruce Rufener) had just finished playing a few practice games together as we had done on many occasions before, and I suggested that maybe we should make it more of an event, by calling it the Practice Cup. We all agreed that would be cool, so I set about designing a trophy worthy of our elevated station in the sport of bowling.</p>
+    <p>The idea was to create a friendly, yet serious mini-tourney that would help us to raise our level of play to be able to more effectively compete in the various leagues we participated in. At first it was just three or four of us (the first 6 tourneys) with odd times and an unusual format- we started with a practice game, before moving on to a three game series. Eventually, we eliminated the practice game and moved to a more predictable schedule, 1:00 on Wednesdays, changing to 9:00 am Thursdays for the summer. We started inviting others to join us (you have to be invited) and the Cup grew to 7, 8, 10, 12 people depending on the day. We’ve had up to 15 and I expect it may grow a bit more, although we will not let it get too big.</p>
+    <p>As you can see by the trophy itself, we don’t take ourselves too seriously, but that does not mean that we don’t take the competition seriously- nope! As we say every week, “Good luck and Goooooood bowling!!!”</p>
 </div>
 
 <div class="content-card">

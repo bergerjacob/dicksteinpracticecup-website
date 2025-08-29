@@ -6,7 +6,7 @@ title: About Dick Stein
 <h1>Who the Heck is Dick Stein??</h1>
 
 <div class="content-card">
-    <div class="placeholder-image" style="width: 250px; height: 250px; float: left; margin-right: 25px;"></div>
+    <img src="/assets/images/dick-stein.jpg" alt="Photo of Dick Stein" style="width: 250px; height: auto; float: left; margin-right: 25px; border-radius: 8px;">
     <p>Some people say, “He walks softly and carries a big stick”, but I would beg to differ- he does NOT walk softly!</p>
     <p>Dick Stein is the official monitor, regulator, recorder, slanderer and otherwise harasser for the Practice Cup events.</p>
     <p>Still, he has been a great mentor for all of us, offering words of wisdom such as , “Second ball first”, “Try 17 & 18” or “Don’t hit the pocket” after a 7-10 split. Over his career, he has won tournaments playing both right and lefthanded.</p>

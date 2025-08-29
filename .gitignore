@@ -1,5 +1,10 @@
+# Jekyll
+_site/
+.jekyll-cache/
+.jekyll-metadata
+
+# Dependencies
 node_modules/
 
-# Local Netlify folder
-.netlify
+# OS files
 .DS_Store

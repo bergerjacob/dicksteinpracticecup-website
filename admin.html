@@ -11,9 +11,26 @@
             <h1>Admin Panel</h1>
 
             <div class="content-card">
+                <h2>Add a New Player</h2>
+                <p>Add a player to the roster so they can be selected as a winner. Their profile will appear on the 'Players' page.</p>
+                <form id="add-player-form" method="POST">
+                    <p><label>Player's Name: <input type="text" name="name" required /></label></p>
+                    <p><label>Player's Photo: <input type="file" name="photo" accept="image/jpeg, image/png" required /></label></p>
+                    <p><label>Player Bio/Description: <textarea name="description" rows="4" required></textarea></label></p>
+                    <p><button type="submit">Add Player</button></p>
+                </form>
+                <div id="add-player-form-status" class="form-status"></div>
+            </div>
+
+            <div class="content-card">
                 <h2>Update Current Champion</h2>
+                <p>Select a player from the list of all added participants.</p>
                 <form id="update-champion-form" method="POST">
-                    <p><label>Winner's Name: <input type="text" name="name" required /></label></p>
+                    <p><label>Winner's Name: 
+                        <select name="name" id="player-select" required>
+                            <option value="">Loading players...</option>
+                        </select>
+                    </label></p>
                     <p><label>Week Of: <input type="text" name="week" required /></label></p>
                     <p><label>Series Score: <input type="number" name="series" required /></label></p>
                     <p><button type="submit">Submit New Champion</button></p>
@@ -22,49 +39,60 @@
             </div>
 
             <div class="content-card">
-                <h2>Upload to Winner's Gallery</h2>
-                <form id="upload-winner-photo-form" method="POST">
-                    <input type="hidden" name="gallery" value="winners-gallery">
-                    <p><label>Photo (JPEG or PNG): <input type="file" name="photo" accept="image/jpeg, image/png" required /></label></p>
-                    <p><button type="submit">Upload Winner Photo</button></p>
+                <h2>Upload Seasonal Results</h2>
+                <form id="upload-season-form" method="POST">
+                     <p><label>Season Name (e.g., "late-2025"): <input type="text" name="season_name" required pattern="^(early|late)-\d{4}$" title="Format must be 'early-YYYY' or 'late-YYYY'"></label></p>
+                    <p><label>Season Excel File (.xlsx): <input type="file" name="sheet" accept=".xlsx" required /></label></p>
+                    <p><button type="submit">Upload Season File</button></p>
                 </form>
-                <div id="winner-photo-form-status" class="form-status"></div>
-            </div>
-
-            <div class="content-card">
-                <h2>Upload to Trophy Locations Gallery</h2>
-                <form id="upload-trophy-photo-form" method="POST">
-                    <input type="hidden" name="gallery" value="trophy-locations">
-                    <p><label>Photo (JPEG or PNG): <input type="file" name="photo" accept="image/jpeg, image/png" required /></label></p>
-                    <p><button type="submit">Upload Trophy Photo</button></p>
-                </form>
-                <div id="trophy-photo-form-status" class="form-status"></div>
+                <div id="season-form-status" class="form-status"></div>
             </div>
         </main>
     </div>
 
     <script>
-      // Helper function for all form submissions
-      async function handleFormSubmit(form, statusDiv, endpoint) {
+      // --- Data Loading ---
+      async function loadPlayers() {
+        try {
+            const response = await fetch('/.netlify/functions/get-players');
+            if (!response.ok) throw new Error('Failed to load players');
+            const players = await response.json();
+            const playerSelect = document.getElementById('player-select');
+            playerSelect.innerHTML = '<option value="">Select a player</option>';
+            players.forEach(player => {
+                const option = document.createElement('option');
+                option.value = player.name;
+                option.textContent = player.name;
+                playerSelect.appendChild(option);
+            });
+        } catch (error) {
+            console.error(error);
+        }
+      }
+      document.addEventListener('DOMContentLoaded', loadPlayers);
+
+      // --- Form Submission Logic ---
+      async function handleFormSubmit(event, statusDiv, endpoint) {
         event.preventDefault();
+        const form = event.target;
         const formData = new FormData(form);
         let body;
         let headers = {};
 
-        // Check if the form contains a file
-        if (formData.has('photo') && formData.get('photo').size > 0) {
-            body = formData; // Send as multipart/form-data
+        // Use FormData for file uploads, otherwise use JSON
+        if (form.querySelector('input[type="file"]')) {
+            body = formData;
         } else {
             const data = Object.fromEntries(formData.entries());
-            body = JSON.stringify({ payload: { data } });
+            body = JSON.stringify(data);
             headers['Content-Type'] = 'application/json';
         }
-
+        
         statusDiv.textContent = 'Submitting, please wait...';
         statusDiv.style.color = 'blue';
 
         try {
-            const response = await fetch(endpoint, { method: 'POST', headers, body });
+            const response = await fetch(endpoint, { method: 'POST', body, headers });
             if (!response.ok) {
                 throw new Error(`Server responded with ${response.status}: ${await response.text()}`);
             }
@@ -76,25 +104,16 @@
         }
       }
 
-      // Champion Form Handler
-      const championForm = document.getElementById('update-champion-form');
-      championForm.addEventListener('submit', (event) => {
-        const statusDiv = document.getElementById('champion-form-status');
-        handleFormSubmit(event.target, statusDiv, '/.netlify/functions/update-champion');
+      document.getElementById('add-player-form').addEventListener('submit', e => {
+        handleFormSubmit(e, document.getElementById('add-player-form-status'), '/.netlify/functions/add-player');
       });
 
-      // Winner Photo Form Handler
-      const winnerPhotoForm = document.getElementById('upload-winner-photo-form');
-      winnerPhotoForm.addEventListener('submit', (event) => {
-        const statusDiv = document.getElementById('winner-photo-form-status');
-        handleFormSubmit(event.target, statusDiv, '/.netlify/functions/upload-image');
+      document.getElementById('update-champion-form').addEventListener('submit', e => {
+        handleFormSubmit(e, document.getElementById('champion-form-status'), '/.netlify/functions/update-champion');
       });
 
-      // Trophy Photo Form Handler
-      const trophyPhotoForm = document.getElementById('upload-trophy-photo-form');
-      trophyPhotoForm.addEventListener('submit', (event) => {
-        const statusDiv = document.getElementById('trophy-photo-form-status');
-        handleFormSubmit(event.target, statusDiv, '/.netlify/functions/upload-image');
+      document.getElementById('upload-season-form').addEventListener('submit', e => {
+        handleFormSubmit(e, document.getElementById('season-form-status'), '/.netlify/functions/upload-season');
       });
     </script>
 </body>
