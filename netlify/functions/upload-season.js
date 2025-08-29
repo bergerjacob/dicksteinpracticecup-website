@@ -26,7 +26,7 @@ exports.handler = async function(event, context) {
 
     try {
         const { fields, fileData } = await parseMultipartForm(event);
-        const seasonName = fields.season_name; // e.g., "late-2025"
+        const seasonName = fields.season_name;
 
         if (!seasonName || !fileData.content) {
             throw new Error("Season name or file is missing.");
@@ -41,15 +41,13 @@ exports.handler = async function(event, context) {
         });
 
         // --- Step 2: Parse Excel and commit the new YAML data file ---
-        const workbook = xlsx.read(fileData.content);
+        // The `cellDates: true` option is critical for parsing dates correctly.
+        const workbook = xlsx.read(fileData.content, { cellDates: true });
         const sheetName = workbook.SheetNames[0];
-        const jsonData = xlsx.utils.sheet_to_json(workbook.Sheets[sheetName]);
+        const worksheet = workbook.Sheets[sheetName];
 
-        const seasonData = jsonData.map(row => ({
-            date: row.Date,
-            winner: row.Winner,
-            series: row.Series
-        }));
+        // This now dynamically creates an array of objects based on the header row.
+        const seasonData = xlsx.utils.sheet_to_json(worksheet);
 
         const yamlContent = yaml.dump(seasonData);
         const yamlPath = `_data/seasons/${seasonName}.yml`;
