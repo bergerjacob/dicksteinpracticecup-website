@@ -24,5 +24,7 @@
   image: /assets/images/players/paul-a.jpg
 - name: Shea Pirtle
   image: /assets/images/players/shea-pirtle.jpg
+- name: test player
+  image: /assets/images/players/test-player.jpg
 - name: Wes F.
   image: /assets/images/players/wes-f.jpg
