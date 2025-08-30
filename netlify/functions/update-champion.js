@@ -1,4 +1,4 @@
-const yaml = require("js-yaml");
+import yaml from "js-yaml";
 
 const repoOwner = "bergerjacob";
 const repoName = "dicksteinpracticecup-website";

@@ -1,6 +1,6 @@
-const yaml = require("js-yaml");
-const xlsx = require("xlsx");
-const Busboy = require("busboy");
+import yaml from "js-yaml";
+import xlsx from "xlsx";
+import Busboy from "busboy";
 
 const repoOwner = "bergerjacob";
 const repoName = "dicksteinpracticecup-website";

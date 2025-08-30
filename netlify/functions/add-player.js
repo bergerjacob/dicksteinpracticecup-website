@@ -1,5 +1,5 @@
-const yaml = require("js-yaml");
-const Busboy = require("busboy");
+import yaml from "js-yaml";
+import Busboy from "busboy";
 
 const repoOwner = "bergerjacob";
 const repoName = "dicksteinpracticecup-website";

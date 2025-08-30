@@ -1,4 +1,4 @@
-const yaml = require("js-yaml");
+import yaml from "js-yaml";
 
 exports.handler = async function(event, context) {
     const { Octokit } = await import("@octokit/rest");
