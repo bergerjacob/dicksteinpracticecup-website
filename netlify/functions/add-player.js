@@ -50,6 +50,7 @@ exports.handler = async function(event, context) {
         }
 
         players.push({ name: playerName, image: `/${imagePath}` });
+        players.sort((a, b) => a.name.localeCompare(b.name)); // Sort players alphabetically
         const updatedPlayersContent = Buffer.from(yaml.dump(players)).toString("base64");
         await octokit.repos.createOrUpdateFileContents({
             owner: repoOwner, repo: repoName, path: playersFilePath,
@@ -57,14 +58,22 @@ exports.handler = async function(event, context) {
             content: updatedPlayersContent, sha: playersFile.sha,
         });
 
-        // 3. Create the player's markdown page file
+        // 3. Create the player's markdown page file with full layout
         const playerPagePath = `_players/${slug}.md`;
         const playerPageContent = `---
-name: ${playerName}
+layout: default
+title: "${playerName}"
+name: "${playerName}"
 image: /${imagePath}
 ---
 
-${description}
+<h1>${playerName}</h1>
+
+<div class="content-card">
+    <img src="{{ page.image | relative_url }}" alt="Photo of ${playerName}" style="width: 250px; height: auto; float: left; margin-right: 25px; margin-bottom: 10px; border-radius: 8px;">
+    <p>${description.replace(/\n/g, '</p><p>')}</p>
+    <div style="clear: both;"></div>
+</div>
 `;
         await octokit.repos.createOrUpdateFileContents({
             owner: repoOwner, repo: repoName, path: playerPagePath,
