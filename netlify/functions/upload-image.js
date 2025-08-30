@@ -1,4 +1,4 @@
-import Busboy from "busboy";
+const Busboy = require("busboy");
 
 const repoOwner = "bergerjacob";
 const repoName = "dicksteinpracticecup-website";
