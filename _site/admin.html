@@ -147,24 +147,24 @@
       }
 
       document.getElementById('add-player-form').addEventListener('submit', e => {
-        handleFormSubmit(e, document.getElementById('add-player-form-status'), '/netlify/functions/add-player');
+        handleFormSubmit(e, document.getElementById('add-player-form-status'), '/.netlify/functions/add-player');
       });
 
       document.getElementById('update-champion-form').addEventListener('submit', e => {
-        handleFormSubmit(e, document.getElementById('champion-form-status'), '/netlify/functions/update-champion');
+        handleFormSubmit(e, document.getElementById('champion-form-status'), '/.netlify/functions/update-champion');
       });
 
       document.getElementById('upload-season-form').addEventListener('submit', e => {
-        handleFormSubmit(e, document.getElementById('season-form-status'), '/netlify/functions/upload-season');
+        handleFormSubmit(e, document.getElementById('season-form-status'), '/.netlify/functions/upload-season');
       });
 
       document.getElementById('upload-trophy-photo-form').addEventListener('submit', e => {
-        handleFormSubmit(e, document.getElementById('trophy-photo-form-status'), '/netlify/functions/upload-image');
+        handleFormSubmit(e, document.getElementById('trophy-photo-form-status'), '/.netlify/functions/upload-image');
       });
 
       document.getElementById('delete-season-form').addEventListener('submit', e => {
           if (confirm('Are you absolutely sure you want to permanently delete this season and all its data? This action cannot be undone.')) {
-              handleFormSubmit(e, document.getElementById('delete-season-form-status'), '/netlify/functions/delete-season');
+              handleFormSubmit(e, document.getElementById('delete-season-form-status'), '/.netlify/functions/delete-season');
           } else {
               e.preventDefault();
           }
