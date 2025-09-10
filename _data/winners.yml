@@ -1,7 +1,11 @@
+- name: Bruce Rufener
+  week: 9/3/25
+  series: 683
+  current: true
 - name: Derral Smith
   week: 8/28/25
   series: 680
-  current: true
+  current: false
 - name: Test Player
   week: 8/29/25
   series: 999
