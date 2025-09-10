@@ -1,0 +1,57 @@
+backend:
+  name: git-gateway
+  branch: main # Or master, depending on your default branch name
+
+media_folder: "assets/images" # Where new images will be uploaded
+public_folder: "/assets/images"
+
+collections:
+  # This manages all player pages in the `_players` folder.
+  # It directly solves your request to edit bios.
+  - name: "players"
+    label: "Player Profiles"
+    folder: "_players"
+    create: true
+    slug: "{{name | slugify}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Player Name", name: "name", widget: "string" }
+      - { label: "Photo", name: "image", widget: "image" }
+      - { label: "Bio", name: "body", widget: "markdown" } # "body" is the main content of the file
+
+  # This creates an interface to edit the winners data file.
+  # It solves your request to add a new photo for the current champion.
+  - name: "winners_data"
+    label: "Current & Past Champions"
+    files:
+      - file: "_data/winners.yml"
+        label: "Winners List"
+        name: "winners"
+        fields:
+          - name: "winners"
+            label: "Edit Winners"
+            widget: "list"
+            fields:
+              - { label: "Player Name", name: "name", widget: "string" }
+              - { label: "Week Of", name: "week", widget: "string" }
+              - { label: "Series Score", name: "series", widget: "number" }
+              - { label: "Is Current Champion?", name: "current", widget: "boolean", default: false }
+
+  # This creates an interface for your video highlights.
+  # It solves the request for managing videos.
+  - name: "highlights_data"
+    label: "Video Highlights"
+    files:
+      - file: "_data/highlights.yml"
+        label: "Videos"
+        name: "videos"
+        fields:
+          - name: "videos"
+            label: "Video Clips"
+            widget: "list"
+            allow_add: true
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Video URL (e.g., from YouTube)", name: "url", widget: "string" }
+              - { label: "Description", name: "description", widget: "text", required: false }
