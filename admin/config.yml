@@ -27,9 +27,9 @@ collections:
     files:
       - file: "_data/winners.yml"
         label: "Winners List"
-        name: "winners"
+        name: "champions" # CHANGED: Made this identifier unique
         fields:
-          - name: "winners"
+          - name: "winners" # UNCHANGED: This must match the key in winners.yml
             label: "Edit Winners"
             widget: "list"
             fields:
@@ -45,9 +45,9 @@ collections:
     files:
       - file: "_data/highlights.yml"
         label: "Videos"
-        name: "videos"
+        name: "video_highlights" # CHANGED: Made this identifier unique
         fields:
-          - name: "videos"
+          - name: "videos" # UNCHANGED: This must match the key in highlights.yml
             label: "Video Clips"
             widget: "list"
             allow_add: true
