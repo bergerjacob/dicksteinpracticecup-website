@@ -3,11 +3,13 @@ backend:
   repo: bergerjacob/dicksteinpracticecup-website
   branch: main
 
+# A helpful description that will appear at the top of the CMS homepage.
+description: "For batch processing (uploading or deleting entire seasons), please use the Season Management Tools page. This CMS is for editing players, champions, and video highlights."
+
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
-  # Collection 1: Player Profiles (now a single file)
   - name: "players_data"
     label: "Player Profiles"
     files:
@@ -18,13 +20,13 @@ collections:
           - name: "players"
             label: "Edit Players"
             widget: "list"
+            label_singular: "Player"
             fields:
               - { label: "Player Name", name: "name", widget: "string" }
               - { label: "Slug (lowercase, no spaces, e.g. 'bruce-rufener')", name: "slug", widget: "string" }
               - { label: "Photo", name: "image", widget: "image" }
               - { label: "Bio", name: "bio", widget: "markdown" }
 
-  # Collection 2: Champions List (File Collection)
   - name: "winners_data"
     label: "Current & Past Champions"
     files:
@@ -35,6 +37,7 @@ collections:
           - name: "winners"
             label: "Edit Winners"
             widget: "list"
+            label_singular: "Winner"
             fields:
               - { label: "Player Name", name: "name", widget: "string" }
               - { label: "Week Of (MM/DD/YY)", name: "week", widget: "string" }
@@ -42,7 +45,6 @@ collections:
               - { label: "Is Current Champion?", name: "current", widget: "boolean", default: false }
               - { label: "Optional Champion Photo", name: "image", widget: "image", required: false }
 
-  # Collection 3: Video Highlights (File Collection)
   - name: "highlights_data"
     label: "Video Highlights"
     files:
@@ -53,6 +55,7 @@ collections:
           - name: "videos"
             label: "Video Clips"
             widget: "list"
+            label_singular: "Video"
             allow_add: true
             fields:
               - { label: "Title", name: "title", widget: "string" }
