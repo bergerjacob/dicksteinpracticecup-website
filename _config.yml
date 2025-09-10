@@ -10,6 +10,10 @@ permalink: pretty
 plugins:
   - jekyll-feed
 
+# Tell Jekyll to copy the admin folder to the final site
+include:
+  - admin
+
 # Collections
 collections:
   players:
@@ -25,4 +29,4 @@ exclude:
   - package.json
   - package-lock.json
   - netlify.toml
-  - admin/
+  - admin/u
