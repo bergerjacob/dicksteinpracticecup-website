@@ -1,0 +1,18 @@
+---
+layout: default
+---
+{% assign player = site.data.players | where: "slug", page.player_slug | first %}
+
+{% if player %}
+  <h1>{{ player.name }}</h1>
+  <div class="content-card">
+    <img src="{{ player.image | relative_url }}" alt="Photo of {{ player.name }}" style="width: 250px; height: auto; float: left; margin-right: 25px; margin-bottom: 10px; border-radius: 8px;">
+    {{ player.bio | markdownify }}
+    <div style="clear: both;"></div>
+  </div>
+{% else %}
+  <h1>Player Not Found</h1>
+  <div class="content-card">
+    <p>The player you are looking for could not be found.</p>
+  </div>
+{% endif %}

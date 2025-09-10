@@ -4,14 +4,33 @@
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Content Manager</title>
-  
+  <style>
+    .admin-header {
+      padding: 12px 20px;
+      background-color: #f4f1ea;
+      border-bottom: 1px solid #d1cdc4;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+      font-size: 14px;
+      color: #3F3F3F;
+    }
+    .admin-header p {
+      margin: 0;
+      padding: 0;
+    }
+    .admin-header a {
+      font-weight: 600;
+      color: #6A7A5C;
+    }
+  </style>
   <script>
     window.CMS_MANUAL_INIT = true;
   </script>
-
   <script src="https://unpkg.com/decap-cms@3.1.10/dist/decap-cms.js"></script>
 </head>
 <body>
+  <div class="admin-header">
+    <p><strong>Note:</strong> For batch processing (uploading or deleting entire seasons), please use the <a href="/admin-tools.html">Season Management Tools</a> page.</p>
+  </div>
   <script>
     CMS.init();
   </script>

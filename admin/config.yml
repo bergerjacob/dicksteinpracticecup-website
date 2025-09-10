@@ -7,18 +7,22 @@ media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
-  # Collection 1: Player Profiles (Folder Collection)
-  - name: "players"
+  # Collection 1: Player Profiles (now a single file)
+  - name: "players_data"
     label: "Player Profiles"
-    folder: "_players"
-    create: true
-    slug: "{{name | slugify}}"
-    fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
-      - { label: "Title", name: "title", widget: "string" }
-      - { label: "Player Name", name: "name", widget: "string" }
-      - { label: "Photo", name: "image", widget: "image" }
-      - { label: "Bio", name: "body", widget: "markdown" }
+    files:
+      - file: "_data/players.yml"
+        label: "Players"
+        name: "players"
+        fields:
+          - name: "players"
+            label: "Edit Players"
+            widget: "list"
+            fields:
+              - { label: "Player Name", name: "name", widget: "string" }
+              - { label: "Slug (lowercase, no spaces, e.g. 'bruce-rufener')", name: "slug", widget: "string" }
+              - { label: "Photo", name: "image", widget: "image" }
+              - { label: "Bio", name: "bio", widget: "markdown" }
 
   # Collection 2: Champions List (File Collection)
   - name: "winners_data"
@@ -26,16 +30,17 @@ collections:
     files:
       - file: "_data/winners.yml"
         label: "Winners List"
-        name: "champions" # Unique internal identifier
+        name: "champions"
         fields:
-          - name: "winners" # Must match the key in winners.yml
+          - name: "winners"
             label: "Edit Winners"
             widget: "list"
             fields:
               - { label: "Player Name", name: "name", widget: "string" }
-              - { label: "Week Of", name: "week", widget: "string" }
+              - { label: "Week Of (MM/DD/YY)", name: "week", widget: "string" }
               - { label: "Series Score", name: "series", widget: "number" }
               - { label: "Is Current Champion?", name: "current", widget: "boolean", default: false }
+              - { label: "Optional Champion Photo", name: "image", widget: "image", required: false }
 
   # Collection 3: Video Highlights (File Collection)
   - name: "highlights_data"
@@ -43,13 +48,13 @@ collections:
     files:
       - file: "_data/highlights.yml"
         label: "Videos"
-        name: "video_highlights" # Unique internal identifier
+        name: "video_highlights"
         fields:
-          - name: "videos" # Must match the key in highlights.yml
+          - name: "videos"
             label: "Video Clips"
             widget: "list"
             allow_add: true
             fields:
               - { label: "Title", name: "title", widget: "string" }
-              - { label: "Video URL (e.g., from YouTube)", name: "url", widget: "string" }
+              - { label: "Video URL (from YouTube)", name: "url", widget: "string" }
               - { label: "Description", name: "description", widget: "text", required: false }

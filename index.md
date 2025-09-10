@@ -8,13 +8,13 @@ The official home for our weekly casual competition.
 ---
 {% assign current_winner_entry = site.data.winners.winners | where: "current", true | first %}
 {% if current_winner_entry %}
-  {% assign current_winner_name = current_winner_entry.name %}
-  {% assign player_profile = site.data.players | where: "name", current_winner_name | first %}
+  {% assign player_profile = site.data.players | where: "name", current_winner_entry.name | first %}
+  {% assign champion_image = current_winner_entry.image | default: player_profile.image %}
 
 <div class="content-card champion-card" style="text-align: center;">
     <h2>Current Champion</h2>
-    {% if player_profile.image %}
-        <img src="{{ player_profile.image | relative_url }}" alt="{{ player_profile.name }}" style="max-width: 300px; border-radius: 8px; margin: 0 auto 1rem; display: block;">
+    {% if champion_image %}
+        <img src="{{ champion_image | relative_url }}" alt="{{ current_winner_entry.name }}" style="max-width: 300px; border-radius: 8px; margin: 0 auto 1rem; display: block;">
     {% endif %}
     <h3 style="margin-top: 0;">{{ current_winner_entry.name }}</h3>
     <p style="text-align: center; margin-bottom: 0;"><strong>Week Of:</strong> {{ current_winner_entry.week }} | <strong>Series:</strong> {{ current_winner_entry.series }}</p>

@@ -1,28 +1,56 @@
 - name: Bruce Rufener
   image: /assets/images/players/bruce-rufener.jpg
+  slug: bruce-rufener
+  bio: Bio can be added later.
 - name: Bud S.
   image: /assets/images/players/bud-s.jpg
+  slug: bud-s
+  bio: Bio can be added later.
 - name: Carol Williams
   image: /assets/images/players/carol-williams.jpg
+  slug: carol-williams
+  bio: Bio can be added later.
 - name: Chris W.
   image: /assets/images/players/chris-w.jpg
+  slug: chris-w
+  bio: Bio can be added later.
 - name: Dave B.
   image: /assets/images/players/dave-b.jpg
+  slug: dave-b
+  bio: Bio can be added later.
 - name: Dave Martinot
   image: /assets/images/players/dave-martinot.jpg
+  slug: dave-martinot
+  bio: Bio can be added later.
 - name: Dennis M.
   image: /assets/images/players/dennis-m.jpg
+  slug: dennis-m
+  bio: Bio can be added later.
 - name: Derral Smith
   image: /assets/images/players/derral-smith.jpg
+  slug: derral-smith
+  bio: Bio can be added later.
 - name: Greg Bingham
   image: /assets/images/players/greg-bingham.jpg
+  slug: greg-bingham
+  bio: Bio can be added later.
 - name: Joseph Berger
   image: /assets/images/players/joseph-berger.jpg
+  slug: joseph-berger
+  bio: Bio can be added later.
 - name: Mark L.
   image: /assets/images/players/mark-l.jpg
+  slug: mark-l
+  bio: Bio can be added later.
 - name: Paul A.
   image: /assets/images/players/paul-a.jpg
+  slug: paul-a
+  bio: Bio can be added later.
 - name: Shea Pirtle
   image: /assets/images/players/shea-pirtle.jpg
+  slug: shea-pirtle
+  bio: Bio can be added later.
 - name: Wes F.
   image: /assets/images/players/wes-f.jpg
+  slug: wes-f
+  bio: Bio can be added later.
