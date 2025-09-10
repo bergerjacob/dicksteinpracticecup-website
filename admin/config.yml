@@ -7,6 +7,7 @@ media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
+  # Collection 1: Player Profiles (Folder Collection)
   - name: "players"
     label: "Player Profiles"
     folder: "_players"
@@ -18,3 +19,37 @@ collections:
       - { label: "Player Name", name: "name", widget: "string" }
       - { label: "Photo", name: "image", widget: "image" }
       - { label: "Bio", name: "body", widget: "markdown" }
+
+  # Collection 2: Champions List (File Collection)
+  - name: "winners_data"
+    label: "Current & Past Champions"
+    files:
+      - file: "_data/winners.yml"
+        label: "Winners List"
+        name: "champions" # Unique internal identifier
+        fields:
+          - name: "winners" # Must match the key in winners.yml
+            label: "Edit Winners"
+            widget: "list"
+            fields:
+              - { label: "Player Name", name: "name", widget: "string" }
+              - { label: "Week Of", name: "week", widget: "string" }
+              - { label: "Series Score", name: "series", widget: "number" }
+              - { label: "Is Current Champion?", name: "current", widget: "boolean", default: false }
+
+  # Collection 3: Video Highlights (File Collection)
+  - name: "highlights_data"
+    label: "Video Highlights"
+    files:
+      - file: "_data/highlights.yml"
+        label: "Videos"
+        name: "video_highlights" # Unique internal identifier
+        fields:
+          - name: "videos" # Must match the key in highlights.yml
+            label: "Video Clips"
+            widget: "list"
+            allow_add: true
+            fields:
+              - { label: "Title", name: "title", widget: "string" }
+              - { label: "Video URL (e.g., from YouTube)", name: "url", widget: "string" }
+              - { label: "Description", name: "description", widget: "text", required: false }
