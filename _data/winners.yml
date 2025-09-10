@@ -1,28 +1,29 @@
-- name: Bruce Rufener
-  week: 9/3/25
-  series: 683
-  current: true
-- name: Derral Smith
-  week: 8/28/25
-  series: 680
-  current: false
-- name: Test Player
-  week: 8/29/25
-  series: 999
-  current: false
-- name: Derral Smith
-  week: 8/28/25
-  series: 680
-  current: false
-- name: Derral Smith
-  week: 8/21/25
-  series: 703
-  current: false
-- name: Bruce Rufener
-  week: 7/28/25
-  series: 680
-  current: false
-- name: Joseph Berger
-  week: 7/14/25
-  series: 710
-  current: false
+winners:
+  - name: Bruce Rufener
+    week: 9/3/25
+    series: 683
+    current: true
+  - name: Derral Smith
+    week: 8/28/25
+    series: 680
+    current: false
+  - name: Test Player
+    week: 8/29/25
+    series: 999
+    current: false
+  - name: Derral Smith
+    week: 8/28/25
+    series: 680
+    current: false
+  - name: Derral Smith
+    week: 8/21/25
+    series: 703
+    current: false
+  - name: Bruce Rufener
+    week: 7/28/25
+    series: 680
+    current: false
+  - name: Joseph Berger
+    week: 7/14/25
+    series: 710
+    current: false

@@ -6,7 +6,7 @@ title: Home
 The official home for our weekly casual competition.
 
 ---
-{% assign current_winner_entry = site.data.winners | where: "current", true | first %}
+{% raw %}{% assign current_winner_entry = site.data.winners.winners | where: "current", true | first %}{% endraw %}
 {% if current_winner_entry %}
   {% assign current_winner_name = current_winner_entry.name %}
   {% assign player_profile = site.data.players | where: "name", current_winner_name | first %}
