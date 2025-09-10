@@ -6,5 +6,15 @@ backend:
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
-# No collections yet!
-collections: []
+collections:
+  - name: "players"
+    label: "Player Profiles"
+    folder: "_players"
+    create: true
+    slug: "{{name | slugify}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "default" }
+      - { label: "Title", name: "title", widget: "string" }
+      - { label: "Player Name", name: "name", widget: "string" }
+      - { label: "Photo", name: "image", widget: "image" }
+      - { label: "Bio", name: "body", widget: "markdown" }
