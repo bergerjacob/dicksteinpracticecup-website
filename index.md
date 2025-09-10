@@ -8,7 +8,7 @@ The official home for our weekly casual competition.
 ---
 {% assign current_winner_entry = site.data.winners.winners | where: "current", true | first %}
 {% if current_winner_entry %}
-  {% assign player_profile = site.data.players | where: "name", current_winner_entry.name | first %}
+  {% assign player_profile = site.data.players.players | where: "name", current_winner_entry.name | first %}
   {% assign champion_image = current_winner_entry.image | default: player_profile.image %}
 
 <div class="content-card champion-card" style="text-align: center;">

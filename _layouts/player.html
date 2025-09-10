@@ -1,7 +1,7 @@
 ---
 layout: default
 ---
-{% assign player = site.data.players | where: "slug", page.player_slug | first %}
+{% assign player = site.data.players.players | where: "slug", page.player_slug | first %}
 
 {% if player %}
   <h1>{{ player.name }}</h1>
