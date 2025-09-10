@@ -1,6 +1,7 @@
 backend:
-  name: git-gateway
-  branch: main # Or master, depending on your default branch name
+  name: github
+  repo: bergerjacob/dicksteinpracticecup-website
+  branch: main
 
 media_folder: "assets/images" # Where new images will be uploaded
 public_folder: "/assets/images"
