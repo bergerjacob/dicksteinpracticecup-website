@@ -3,6 +3,7 @@ backend:
   repo: bergerjacob/dicksteinpracticecup-website
   branch: main
 
+# These are the default folders for the global Media tab
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
@@ -10,7 +11,8 @@ collections:
   - name: "players_data"
     label: "Player Profiles"
     description: "Click on the 'Players' item below to open the editor. NOTE: For season uploads/deletes, use the separate Season Management Tools page."
-    media_folder: "assets/images/players"
+    # Corrected path to go up one directory from _data
+    media_folder: "../assets/images/players"
     public_folder: "/assets/images/players"
     files:
       - file: "_data/players.yml"
@@ -29,7 +31,8 @@ collections:
 
   - name: "winners_data"
     label: "Current & Past Champions"
-    media_folder: "assets/images/players"
+    # Corrected path to go up one directory from _data
+    media_folder: "../assets/images/players"
     public_folder: "/assets/images/players"
     files:
       - file: "_data/winners.yml"
@@ -49,7 +52,7 @@ collections:
 
   - name: "trophy_locations_data"
     label: "Trophy Location Photos"
-    media_folder: "assets/images/trophy-locations"
+    media_folder: "../assets/images/trophy-locations"
     public_folder: "/assets/images/trophy-locations"
     files:
       - file: "_data/trophy_locations.yml"
