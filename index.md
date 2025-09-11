@@ -31,10 +31,9 @@ The official home for our weekly casual competition.
 <div class="content-card">
     <p>The first time you win the Cup, a picture of it has to be taken at home or somewhere with you. Here are some of the places it has been sighted.</p>
     <div class="gallery">
-        {% assign sorted_images = site.static_files | where_exp: "item", "item.path contains '/assets/images/trophy-locations/'" | sort: 'path' | reverse %}
-        {% for file in sorted_images %}
+        {% for item in site.data.trophy_locations.photos %}
             <div class="gallery-item">
-                <img src="{{ file.path | relative_url }}" alt="Trophy Location Photo">
+                <img src="{{ item.image | relative_url }}" alt="{{ item.caption | default: 'Trophy Location Photo' }}">
             </div>
         {% endfor %}
     </div>

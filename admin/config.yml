@@ -3,15 +3,15 @@ backend:
   repo: bergerjacob/dicksteinpracticecup-website
   branch: main
 
-# A helpful description that will appear at the top of the CMS homepage.
-description: "For batch processing (uploading or deleting entire seasons), please use the Season Management Tools page. This CMS is for editing players, champions, and video highlights."
-
 media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
   - name: "players_data"
     label: "Player Profiles"
+    description: "Click on the 'Players' item below to open the editor. NOTE: For season uploads/deletes, use the separate Season Management Tools page."
+    media_folder: "assets/images/players"
+    public_folder: "/assets/images/players"
     files:
       - file: "_data/players.yml"
         label: "Players"
@@ -29,6 +29,8 @@ collections:
 
   - name: "winners_data"
     label: "Current & Past Champions"
+    media_folder: "assets/images/players"
+    public_folder: "/assets/images/players"
     files:
       - file: "_data/winners.yml"
         label: "Winners List"
@@ -44,6 +46,24 @@ collections:
               - { label: "Series Score", name: "series", widget: "number" }
               - { label: "Is Current Champion?", name: "current", widget: "boolean", default: false }
               - { label: "Optional Champion Photo", name: "image", widget: "image", required: false }
+
+  - name: "trophy_locations_data"
+    label: "Trophy Location Photos"
+    media_folder: "assets/images/trophy-locations"
+    public_folder: "/assets/images/trophy-locations"
+    files:
+      - file: "_data/trophy_locations.yml"
+        label: "Trophy Photos"
+        name: "trophy_photos"
+        fields:
+          - name: "photos"
+            label: "Edit Photos"
+            label_singular: "Photo"
+            widget: "list"
+            summary: "{{fields.caption}}"
+            fields:
+              - { label: "Image", name: "image", widget: "image" }
+              - { label: "Caption (Optional)", name: "caption", widget: "string", required: false }
 
   - name: "highlights_data"
     label: "Video Highlights"

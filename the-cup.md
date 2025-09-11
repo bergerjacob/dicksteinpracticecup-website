@@ -3,7 +3,6 @@ layout: default
 title: The Cup
 ---
 
-
 <h1>The Coveted Cup</h1>
 
 <div class="content-card">
@@ -35,12 +34,11 @@ title: The Cup
 
 <div class="content-card">
     <h2>Where Has It Been?</h2>
-    <p>The cup travels with the winner each week. Here are some of the places it has been sighted. New photos added to the locations folder will appear here automatically.</p>
+    <p>The cup travels with the winner each week. You can add, remove, and reorder photos in the CMS under "Trophy Location Photos".</p>
     <div class="gallery">
-        {% assign sorted_images = site.static_files | where_exp: "item", "item.path contains '/assets/images/trophy-locations/'" | sort: 'path' | reverse %}
-        {% for file in sorted_images %}
+        {% for item in site.data.trophy_locations.photos %}
             <div class="gallery-item">
-                <img src="{{ file.path | relative_url }}" alt="Trophy Location Photo">
+                <img src="{{ item.image | relative_url }}" alt="{{ item.caption | default: 'Trophy Location Photo' }}">
             </div>
         {% endfor %}
     </div>

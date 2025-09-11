@@ -10,8 +10,8 @@
         <main>
             <h1>Season Management Tools</h1>
             <div class="content-card">
-                <p>Use this page <strong>only</strong> for uploading or deleting entire seasons.</p>
-                <p>For all other content edits (player bios, champions, videos), please use the main <a href="/admin/">Content Manager</a>.</p>
+                <p>Use this page <strong>only</strong> for uploading or deleting seasonal Excel files.</p>
+                <p>For all other content edits (players, champions, photos, videos), please use the main <a href="/admin/">Content Manager</a>.</p>
             </div>
 
             <div class="content-card">
@@ -63,6 +63,8 @@
       async function handleFormSubmit(event, statusDiv, endpoint) {
         event.preventDefault();
         const form = event.target;
+        const button = form.querySelector('button[type="submit"]');
+        const originalButtonText = button.textContent;
         const formData = new FormData(form);
         let body;
         let headers = {};
@@ -77,6 +79,9 @@
         
         statusDiv.textContent = 'Submitting, please wait...';
         statusDiv.style.color = 'blue';
+        button.disabled = true;
+        button.textContent = 'Uploading...';
+
 
         try {
             const response = await fetch(endpoint, { method: 'POST', body, headers });
@@ -88,6 +93,8 @@
             console.error('Submission failed:', error);
             statusDiv.textContent = `Error: ${error.message}`;
             statusDiv.style.color = 'red';
+            button.disabled = false;
+            button.textContent = originalButtonText;
         }
       }
 
