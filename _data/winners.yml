@@ -54,3 +54,8 @@ winners:
     week: 9/10/25
     series: 712
     image: /assets/images/players/joseph-berger.jpg
+  - current: true
+    name: test
+    week: 09/15/2025
+    series: 555
+    image: /assets/images/players/screenshot-1752732614.png
