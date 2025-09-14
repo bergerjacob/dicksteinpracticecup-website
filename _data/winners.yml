@@ -27,3 +27,8 @@ winners:
     week: 7/14/25
     series: 710
     current: false
+  - current: true
+    name: Joeseph Berger
+    week: 9/10/25
+    series: 712
+    image: /assets/images/players/joseph-berger.jpg
