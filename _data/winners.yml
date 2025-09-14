@@ -2,33 +2,55 @@ winners:
   - name: Bruce Rufener
     week: 9/3/25
     series: 683
-    current: true
+    current: false
+    image: /assets/images/players/bruce-rufener.jpg
   - name: Derral Smith
     week: 8/28/25
     series: 680
     current: false
-  - name: Test Player
-    week: 8/29/25
-    series: 999
-    current: false
-  - name: Derral Smith
-    week: 8/28/25
-    series: 680
-    current: false
+    image: /assets/images/players/derral-smith.jpg
   - name: Derral Smith
     week: 8/21/25
     series: 703
     current: false
+    image: /assets/images/players/derral-smith.jpg
   - name: Bruce Rufener
-    week: 7/28/25
-    series: 680
+    week: 8/14/25
+    series: 691
     current: false
-  - name: Joseph Berger
-    week: 7/14/25
-    series: 710
+    image: /assets/images/players/bruce-rufener.jpg
+  - name: Bruce Rufener
+    week: 8/7//25
+    series: 712
     current: false
+    image: /assets/images/players/bruce-rufener.jpg
   - current: true
-    name: Joeseph Berger
+    name: Bruce Rufener
+    week: 7/31/25
+    series: 708
+    image: /assets/images/players/bruce-rufener.jpg
+  - current: false
+    name: Mark Lackey
+    week: 7/24/25
+    series: 681
+    image: /assets/images/players/mark-l.jpg
+  - current: false
+    name: Dave Martinot
+    week: 7/17/25
+    series: 682
+    image: /assets/images/players/dave-martinot.jpg
+  - current: false
+    name: Bruce Rufener
+    week: 7/10/25
+    series: 685
+    image: /assets/images/players/bruce-rufener.jpg
+  - current: false
+    name: Bruce Rufener
+    week: 7/3/25
+    series: 683
+    image: /assets/images/players/bruce-rufener.jpg
+  - current: true
+    name: Joe Berger
     week: 9/10/25
     series: 712
     image: /assets/images/players/joseph-berger.jpg
