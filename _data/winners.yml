@@ -24,7 +24,7 @@ winners:
     series: 712
     current: false
     image: /assets/images/players/bruce-rufener.jpg
-  - current: true
+  - current: false
     name: Bruce Rufener
     week: 7/31/25
     series: 708
@@ -49,7 +49,7 @@ winners:
     week: 7/3/25
     series: 683
     image: /assets/images/players/bruce-rufener.jpg
-  - current: true
+  - current: false
     name: Joe Berger
     week: 9/10/25
     series: 712
