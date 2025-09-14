@@ -49,13 +49,8 @@ winners:
     week: 7/3/25
     series: 683
     image: /assets/images/players/bruce-rufener.jpg
-  - current: false
+  - current: true
     name: Joe Berger
     week: 9/10/25
     series: 712
     image: /assets/images/players/joseph-berger.jpg
-  - current: true
-    name: test
-    week: 09/15/2025
-    series: 555
-    image: /assets/images/players/screenshot-1752732614.png
