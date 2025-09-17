@@ -1,10 +1,10 @@
 videos:
-  - title: First Video Highlight!
-    url: https://www.youtube.com/watch?v=dQw4w9WgXcQ
-    description: This is a placeholder video.
   - url: https://youtube.com/shorts/gckKsx4PyjE
     title: Shea's 300
     description: Shea Pirtle rolls a 300 game on feb. 26, 2025!
   - title: Dave M. 300
     url: https://youtu.be/hDySg-zTWRY
     description: Dave Martinot rolls the very first 300 in Practice Cup on Nov. 7th, 2025!
+  - url: https://youtube.com/shorts/x23pEiVw_xA
+    title: Dennis M 298
+    description: Dennis Milosky rolled a nice 298 on Feb. 19th, 2025!
