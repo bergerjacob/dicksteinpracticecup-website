@@ -1,7 +1,7 @@
 ---
 layout: player
 title: Terry Dodson
-player_slug: terry-dodson
+slug: terry-dodson
 image: /assets/images/players/terry-d.jpg
 ---
 This is Terry Dodson and here’s a little bit about me. I consider myself
