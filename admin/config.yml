@@ -21,17 +21,6 @@ collections:
       - { label: "URL and Filename Slug", name: "player_slug", widget: "string", hint: "e.g. 'bruce-rufener'. Must be unique." }
       - { label: "Photo", name: "image", widget: "image" }
       - { label: "Bio", name: "body", widget: "markdown" }
-  - name: "players"
-    label: "Player Profiles"
-    folder: "_players"
-    create: true
-    slug: "{{slug}}"
-    fields:
-      - { label: "Layout", name: "layout", widget: "hidden", default: "player" }
-      - { label: "Player Name (used as page title)", name: "title", widget: "string" }
-      - { label: "URL and Filename Slug", name: "player_slug", widget: "string", hint: "e.g. 'bruce-rufener'. Must be unique." }
-      - { label: "Photo", name: "image", widget: "image" }
-      - { label: "Bio", name: "body", widget: "markdown" }
 
   - name: "winners_data"
     label: "Current & Past Champions"
