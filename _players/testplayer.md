@@ -1,7 +1,7 @@
 ---
 layout: player
-title: test player
-player_slug: testplayer
-image: /assets/images/players/image.jpg
+title: test player 2
+player_slug: testplayer2
+image: /assets/images/players/unnamed.png
 ---
-test bio
+test bio2
