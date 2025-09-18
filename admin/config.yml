@@ -8,30 +8,33 @@ media_folder: "assets/images"
 public_folder: "/assets/images"
 
 collections:
-  - name: "players_data"
+  - name: "players"
     label: "Player Profiles"
-    description: "Click on the 'Players' item below to open the editor. NOTE: For season uploads/deletes, use the separate Season Management Tools page."
-    # Corrected path to go up one directory from _data
-    media_folder: "../assets/images/players"
+    folder: "_players"
+    create: true
+    slug: "{{player_slug}}"
+    media_folder: "/assets/images/players" # Keeps player photos organized
     public_folder: "/assets/images/players"
-    files:
-      - file: "_data/players.yml"
-        label: "Players"
-        name: "players"
-        fields:
-          - name: "players"
-            label: "Edit Players"
-            widget: "list"
-            label_singular: "Player"
-            fields:
-              - { label: "Player Name", name: "name", widget: "string" }
-              - { label: "Slug (lowercase, no spaces, e.g. 'bruce-rufener')", name: "slug", widget: "string" }
-              - { label: "Photo", name: "image", widget: "image" }
-              - { label: "Bio", name: "bio", widget: "markdown" }
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "player" }
+      - { label: "Player Name (used as page title)", name: "title", widget: "string" }
+      - { label: "URL and Filename Slug", name: "player_slug", widget: "string", hint: "e.g. 'bruce-rufener'. Must be unique." }
+      - { label: "Photo", name: "image", widget: "image" }
+      - { label: "Bio", name: "body", widget: "markdown" }
+  - name: "players"
+    label: "Player Profiles"
+    folder: "_players"
+    create: true
+    slug: "{{slug}}"
+    fields:
+      - { label: "Layout", name: "layout", widget: "hidden", default: "player" }
+      - { label: "Player Name (used as page title)", name: "title", widget: "string" }
+      - { label: "URL and Filename Slug", name: "player_slug", widget: "string", hint: "e.g. 'bruce-rufener'. Must be unique." }
+      - { label: "Photo", name: "image", widget: "image" }
+      - { label: "Bio", name: "body", widget: "markdown" }
 
   - name: "winners_data"
     label: "Current & Past Champions"
-    # Corrected path to go up one directory from _data
     media_folder: "../assets/images/players"
     public_folder: "/assets/images/players"
     files:
