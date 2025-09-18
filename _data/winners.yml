@@ -49,8 +49,13 @@ winners:
     week: 7/3/25
     series: 683
     image: /assets/images/players/bruce-rufener.jpg
-  - current: true
+  - current: false
     name: Joe Berger
     week: 9/10/25
     series: 712
     image: /assets/images/players/joe-b.-9-10-25.jpg
+  - current: true
+    name: Herbert M
+    week: 9/17/25
+    series: 658
+    image: /assets/images/players/herbert-m.jpg
