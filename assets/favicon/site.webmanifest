@@ -1,0 +1,21 @@
+{
+  "name": "Dick Stein Practice Cup",
+  "short_name": "Practice Cup",
+  "icons": [
+    {
+      "src": "/assets/favicon/web-app-manifest-192x192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/assets/favicon/web-app-manifest-512x512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable"
+    }
+  ],
+  "theme_color": "#6A7A5C",
+  "background_color": "#e8e4d9",
+  "display": "standalone"
+}
