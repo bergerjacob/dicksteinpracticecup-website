@@ -34,6 +34,9 @@ The official home for our weekly casual competition.
         {% for item in site.data.trophy_locations.photos %}
             <div class="gallery-item">
                 <img src="{{ item.image | relative_url }}" alt="{{ item.caption | default: 'Trophy Location Photo' }}">
+                {% if item.caption %}
+                    <div class="gallery-caption">{{ item.caption }}</div>
+                {% endif %}
             </div>
         {% endfor %}
     </div>

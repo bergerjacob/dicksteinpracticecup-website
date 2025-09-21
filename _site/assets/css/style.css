@@ -186,10 +186,26 @@ footer a:hover {
 
 /* Gallery Item Styles */
 .gallery-item {
+    position: relative; /* This is needed for the caption overlay */
     border-radius: 8px;
     overflow: hidden;
     box-shadow: 0 2px 8px var(--shadow-color);
     background-color: var(--border-color);
+}
+
+/* Append this new rule to the end of the file */
+.gallery-caption {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: linear-gradient(to top, rgba(0,0,0,0.8), transparent);
+    color: white;
+    text-align: center;
+    padding: 20px 10px 8px 10px;
+    font-size: 0.9rem;
+    font-weight: 500;
+    pointer-events: none;
 }
 
 .gallery-item img {
