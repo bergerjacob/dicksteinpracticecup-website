@@ -34,7 +34,7 @@ title: The Cup
 
 <div class="content-card">
     <h2>Where Has It Been?</h2>
-    <p>The cup travels with the winner each week. You can add, remove, and reorder photos in the CMS under "Trophy Location Photos".</p>
+    <p>The cup travels with the winner each week.</p>
     <div class="gallery">
         {% for item in site.data.trophy_locations.photos %}
             <div class="gallery-item">
