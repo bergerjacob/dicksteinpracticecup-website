@@ -220,6 +220,18 @@ footer a:hover {
     transform: scale(1.05);
 }
 
+.gallery-item--wide {
+    grid-column: span 2;
+}
+
+/* On smaller screens where the grid might be too narrow, 
+   we can revert this so it doesn't look strange. */
+@media (max-width: 475px) {
+    .gallery-item--wide {
+        grid-column: span 1;
+    }
+}
+
 /* Download Link List Styles */
 ul {
     list-style-type: none;
