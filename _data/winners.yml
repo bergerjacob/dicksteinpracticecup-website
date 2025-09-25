@@ -54,8 +54,13 @@ winners:
     week: 9/10/25
     series: 712
     image: /assets/images/players/joe-b.-9-10-25.jpg
-  - current: true
+  - current: false
     name: Herbert M
     week: 9/17/25
     series: 658
     image: /assets/images/players/herbert-m.jpg
+  - current: true
+    name: Bruce Rufener
+    week: 9/24/25
+    series: 734
+    image: /assets/images/players/9-24-25.jpg
