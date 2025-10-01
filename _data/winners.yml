@@ -59,8 +59,13 @@ winners:
     week: 9/17/25
     series: 658
     image: /assets/images/players/herbert-m.jpg
-  - current: true
+  - current: false
     name: Bruce Rufener
     week: 9/24/25
     series: 734
     image: /assets/images/players/9-24-25.jpg
+  - current: true
+    name: Dennis Milosky
+    week: 10/1/25
+    series: 700
+    image: /assets/images/players/10-1-25.jpg
