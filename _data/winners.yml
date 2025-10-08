@@ -49,11 +49,11 @@ winners:
     week: 7/3/25
     series: 683
     image: /assets/images/players/bruce-rufener.jpg
-  - current: false
+  - current: true
     name: Joe Berger
-    week: 9/10/25
-    series: 712
-    image: /assets/images/players/joe-b.-9-10-25.jpg
+    week: 10/8/25
+    series: 657
+    image: /assets/images/players/10-8-25.jpg
   - current: false
     name: Herbert M
     week: 9/17/25
@@ -64,7 +64,7 @@ winners:
     week: 9/24/25
     series: 734
     image: /assets/images/players/9-24-25.jpg
-  - current: true
+  - current: false
     name: Dennis Milosky
     week: 10/1/25
     series: 703
