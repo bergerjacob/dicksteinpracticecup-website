@@ -49,7 +49,7 @@ winners:
     week: 7/3/25
     series: 683
     image: /assets/images/players/bruce-rufener.jpg
-  - current: true
+  - current: false
     name: Joe Berger
     week: 10/8/25
     series: 657
@@ -69,3 +69,8 @@ winners:
     week: 10/1/25
     series: 703
     image: /assets/images/players/10-1-25.jpg
+  - current: true
+    name: Tyler Hoang
+    week: 10/15/25
+    series: 633
+    image: /assets/images/players/tyler-h.jpg
