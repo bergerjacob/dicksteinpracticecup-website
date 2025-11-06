@@ -64,17 +64,17 @@ winners:
     week: 9/24/25
     series: 734
     image: /assets/images/players/9-24-25.jpg
-  - current: false
+  - current: true
     name: Dennis Milosky
-    week: 10/22/25
-    series: 750
-    image: /assets/images/players/10-22-25.jpg
+    week: 11/5/25
+    series: 787
+    image: /assets/images/players/11-05-25.jpg
   - current: false
     name: Tyler Hoang
     week: 10/15/25
     series: 633
     image: /assets/images/players/tyler-h.jpg
-  - current: true
+  - current: false
     name: Terry Dodson
     week: 10/29/25
     series: 745
