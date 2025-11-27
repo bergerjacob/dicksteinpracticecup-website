@@ -44,7 +44,7 @@ winners:
     week: 7/10/25
     series: 685
     image: /assets/images/players/bruce-rufener.jpg
-  - current: true
+  - current: false
     name: Bruce Rufener
     week: 11/19/25
     series: 673
@@ -79,3 +79,8 @@ winners:
     week: 10/29/25
     series: 745
     image: /assets/images/players/10-29-25.jpg
+  - current: true
+    name: Mr. Turkey
+    week: 11-26-25
+    series: 30
+    image: /assets/images/players/mr.-turkey.png
