@@ -74,12 +74,12 @@ winners:
     week: 10/15/25
     series: 633
     image: /assets/images/players/tyler-h.jpg
-  - current: false
-    name: Terry Dodson
-    week: 10/29/25
-    series: 745
-    image: /assets/images/players/10-29-25.jpg
   - current: true
+    name: Terry Dodson
+    week: 12/3/25
+    series: 704
+    image: /assets/images/players/12-3-25.jpg
+  - current: false
     name: Mr. Turkey
     week: 11-26-25
     series: 30
