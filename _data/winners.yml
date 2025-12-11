@@ -74,7 +74,7 @@ winners:
     week: 10/15/25
     series: 633
     image: /assets/images/players/tyler-h.jpg
-  - current: true
+  - current: false
     name: Terry Dodson
     week: 12/3/25
     series: 704
@@ -84,3 +84,8 @@ winners:
     week: 11-26-25
     series: 30
     image: /assets/images/players/mr.-turkey.png
+  - current: true
+    name: Shea Pirtle
+    week: 12/10/25
+    series: 760
+    image: /assets/images/players/12-10-25.jpg
