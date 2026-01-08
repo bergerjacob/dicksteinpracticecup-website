@@ -64,11 +64,11 @@ winners:
     week: 9/24/25
     series: 734
     image: /assets/images/players/9-24-25.jpg
-  - current: false
+  - current: true
     name: Dennis Milosky
-    week: 11/5/25
-    series: 787
-    image: /assets/images/players/11-05-25.jpg
+    week: 1/7/26
+    series: 701
+    image: /assets/images/players/1-7-26.jpg
   - current: false
     name: Tyler Hoang
     week: 10/15/25
@@ -84,7 +84,7 @@ winners:
     week: 11-26-25
     series: 30
     image: /assets/images/players/mr.-turkey.png
-  - current: true
+  - current: false
     name: Shea Pirtle
     week: 12/17/25
     series: 668
