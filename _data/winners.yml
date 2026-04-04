@@ -44,7 +44,7 @@ winners:
     week: 7/10/25
     series: 685
     image: /assets/images/players/bruce-rufener.jpg
-  - current: true
+  - current: false
     name: Bruce Rufener
     week: 3/18/26
     series: 710
@@ -74,10 +74,10 @@ winners:
     week: 10/15/25
     series: 633
     image: /assets/images/players/tyler-h.jpg
-  - current: false
+  - current: true
     name: Terry Dodson
     week: 1/21/26
-    series: 697
+    series: 619
     image: /assets/images/players/1-21-26.jpg
   - current: false
     name: Mr. Turkey
