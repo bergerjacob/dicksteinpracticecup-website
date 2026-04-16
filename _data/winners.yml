@@ -44,7 +44,7 @@ winners:
     week: 7/10/25
     series: 685
     image: /assets/images/players/bruce-rufener.jpg
-  - current: true
+  - current: false
     name: Bruce Rufener
     week: 4/8/26
     series: 733
@@ -54,11 +54,11 @@ winners:
     week: 3/4/26
     series: 754
     image: /assets/images/players/3-4-26.jpg
-  - current: false
+  - current: true
     name: Herbert M
-    week: 2/18/26
-    series: 728
-    image: /assets/images/players/2-18-26.jpg
+    week: 4/15/26
+    series: 660
+    image: /assets/images/players/4-15-26.jpg
   - current: false
     name: Bruce Rufener
     week: 9/24/25
