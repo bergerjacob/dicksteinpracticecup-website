@@ -31,9 +31,9 @@ winners:
     image: /assets/images/players/bruce-rufener.jpg
   - current: true
     name: Mark Lackey
-    week: 4/22/26
-    series: 647
-    image: /assets/images/players/4-22-26.jpg
+    week: 4/29/26
+    series: 674
+    image: /assets/images/players/4-29-26.jpg
   - current: false
     name: Dave Martinot
     week: 7/17/25
