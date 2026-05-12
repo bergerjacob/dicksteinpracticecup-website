@@ -29,7 +29,7 @@ winners:
     week: 7/31/25
     series: 708
     image: /assets/images/players/bruce-rufener.jpg
-  - current: true
+  - current: false
     name: Mark Lackey
     week: 4/29/26
     series: 674
@@ -54,11 +54,11 @@ winners:
     week: 3/4/26
     series: 754
     image: /assets/images/players/3-4-26.jpg
-  - current: false
+  - current: true
     name: Herbert M
-    week: 4/15/26
-    series: 660
-    image: /assets/images/players/4-15-26.jpg
+    week: 5/6/26
+    series: 690
+    image: /assets/images/players/5-6-26.jpg
   - current: false
     name: Bruce Rufener
     week: 9/24/25
