@@ -51,9 +51,9 @@ winners:
     image: /assets/images/players/4-8-26.jpg
   - current: true
     name: Joe Berger
-    week: 5/13/26
-    series: 708
-    image: /assets/images/players/5-13-26.jpg
+    week: 5/20/26
+    series: 738
+    image: /assets/images/players/5-20-26.jpg
   - current: false
     name: Herbert M
     week: 5/6/26
