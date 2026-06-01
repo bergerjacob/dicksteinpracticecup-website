@@ -49,7 +49,7 @@ winners:
     week: 4/8/26
     series: 733
     image: /assets/images/players/4-8-26.jpg
-  - current: true
+  - current: false
     name: Joe Berger
     week: 5/20/26
     series: 738
@@ -74,11 +74,11 @@ winners:
     week: 10/15/25
     series: 633
     image: /assets/images/players/tyler-h.jpg
-  - current: false
+  - current: true
     name: Terry Dodson
-    week: 1/21/26
-    series: 619
-    image: /assets/images/players/1-21-26.jpg
+    week: 5/27/26
+    series: 695
+    image: /assets/images/players/5-27-26.jpg
   - current: false
     name: Mr. Turkey
     week: 11-26-25
