@@ -33,3 +33,11 @@ title: History
         {% endfor %}
     </ul>
 </div>
+
+<div class="content-card spreadsheet-card">
+    <h2>Full Season Results</h2>
+    <p>The spreadsheet below contains the complete season-by-season results. You can scroll to see all data.</p>
+    <div class="spreadsheet-embed">
+        <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vS7QVGueJJl4HmzIk7kDMU49pvwrVy1x8hO4sUAPNMVPDQ2qX5WC_evixpfzmh4GxAi-70OK4ISBwBc/pubhtml?widget=true&amp;headers=false"></iframe>
+    </div>
+</div>
