@@ -31,9 +31,9 @@ winners:
     image: /assets/images/players/bruce-rufener.jpg
   - current: false
     name: Mark Lackey
-    week: 7/24/25
-    series: 681
-    image: /assets/images/players/mark-l.jpg
+    week: 4/29/26
+    series: 674
+    image: /assets/images/players/4-29-26.jpg
   - current: false
     name: Dave Martinot
     week: 7/17/25
@@ -46,16 +46,46 @@ winners:
     image: /assets/images/players/bruce-rufener.jpg
   - current: false
     name: Bruce Rufener
-    week: 7/3/25
-    series: 683
-    image: /assets/images/players/bruce-rufener.jpg
+    week: 4/8/26
+    series: 733
+    image: /assets/images/players/4-8-26.jpg
   - current: false
     name: Joe Berger
-    week: 9/10/25
-    series: 712
-    image: /assets/images/players/joe-b.-9-10-25.jpg
-  - current: true
+    week: 5/20/26
+    series: 738
+    image: /assets/images/players/5-20-26.jpg
+  - current: false
     name: Herbert M
-    week: 9/17/25
-    series: 658
-    image: /assets/images/players/herbert-m.jpg
+    week: 5/6/26
+    series: 690
+    image: /assets/images/players/5-6-26.jpg
+  - current: false
+    name: Bruce Rufener
+    week: 9/24/25
+    series: 734
+    image: /assets/images/players/9-24-25.jpg
+  - current: true
+    name: Dennis Milosky
+    week: 6/4/26
+    series: 631
+    image: /assets/images/players/6-4-26.jpg
+  - current: false
+    name: Tyler Hoang
+    week: 10/15/25
+    series: 633
+    image: /assets/images/players/tyler-h.jpg
+  - current: false
+    name: Terry Dodson
+    week: 5/27/26
+    series: 695
+    image: /assets/images/players/5-27-26.jpg
+  - current: false
+    name: Mr. Turkey
+    week: 11-26-25
+    series: 30
+    image: /assets/images/players/mr.-turkey.png
+  - current: false
+    name: Shea Pirtle
+    week: 12/17/25
+    series: 668
+    image: /assets/images/players/12-17-25.jpg
