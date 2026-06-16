@@ -54,17 +54,17 @@ winners:
     week: 5/20/26
     series: 738
     image: /assets/images/players/5-20-26.jpg
-  - current: false
+  - current: true
     name: Herbert M
-    week: 5/6/26
-    series: 690
+    week: 6/11/26
+    series: 676
     image: /assets/images/players/5-6-26.jpg
   - current: false
     name: Bruce Rufener
     week: 9/24/25
     series: 734
     image: /assets/images/players/9-24-25.jpg
-  - current: true
+  - current: false
     name: Dennis Milosky
     week: 6/4/26
     series: 631
