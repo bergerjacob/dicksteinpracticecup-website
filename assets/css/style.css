@@ -126,6 +126,27 @@ p, li {
     color: var(--primary-color);
 }
 
+.champions-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.champions-row .champion-card {
+    flex: 1;
+    min-width: 280px;
+    margin-bottom: 0;
+}
+
+.semi-annual-champion {
+    border: 2px solid #8B7355; /* bronze/gold tone to differentiate */
+}
+
+.semi-annual-champion h2 {
+    border-bottom-color: #8B7355;
+}
+
 .table-container {
     background-color: var(--card-bg);
     border-radius: 12px;
