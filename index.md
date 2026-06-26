@@ -25,13 +25,13 @@ The official home for our weekly casual competition.
 
 {% assign semiannual_champion = site.data.semiannual_champions.champions | where: "current", true | first %}
 {% if semiannual_champion %}
-<div class="content-card champion-card semi-annual-champion" style="text-align: center;">
+<div class="content-card champion-card" style="text-align: center;">
     <h2>Semi-Annual Champion</h2>
-    {% if semiannual_champion.image %}
+    {% if semiannual_champion.image and semiannual_champion.image != "" %}
         <img src="{{ semiannual_champion.image | relative_url }}" alt="{{ semiannual_champion.name }}" style="max-width: 300px; border-radius: 8px; margin: 0 auto 1rem; display: block;">
     {% endif %}
-    <h3 style="margin-top: 0;">{{ semiannual_champion.name }}</h3>
-    <p style="text-align: center; margin-bottom: 0;"><strong>Season:</strong> {{ semiannual_champion.season }} | <strong>Wins:</strong> {{ semiannual_champion.wins }}</p>
+    <h3 style="margin-top: 0;">{{ semiannual_champion.name | default: "TBD" }}</h3>
+    <p style="text-align: center; margin-bottom: 0;"><strong>Season:</strong> {{ semiannual_champion.season }}{% if semiannual_champion.notes and semiannual_champion.notes != "" %} | {{ semiannual_champion.notes }}{% endif %}</p>
 </div>
 {% endif %}
 

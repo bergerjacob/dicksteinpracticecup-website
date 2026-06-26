@@ -1,25 +1,10 @@
 # Semi-Annual Champions
-# The champion for each six-month season (person with the most weekly wins)
-# Set current: true for the active/ongoing season's champion
+# The winner of each six-month bracket. Set current: true for the active season.
+# Notes can be winning score, bracket details, or left blank.
 
 champions:
-  - name: Mark Lackey
+  - name: ""
     season: "Early 2026 (Jan - Jun)"
-    wins: 7
+    notes: ""
     current: true
-    image: /assets/images/players/mark-l.jpg
-  - name: Bruce Rufener
-    season: "Late 2025 (Jul - Dec)"
-    wins: 8
-    current: false
-    image: /assets/images/players/bruce-rufener.jpg
-  - name: Bruce Rufener
-    season: "Early 2025 (Jan - Jun)"
-    wins: 6
-    current: false
-    image: /assets/images/players/bruce-rufener.jpg
-  - name: Bruce Rufener
-    season: "Late 2024 (Jul - Dec)"
-    wins: 4
-    current: false
-    image: /assets/images/players/bruce-rufener.jpg
+    image: ""

@@ -126,6 +126,19 @@ p, li {
     color: var(--primary-color);
 }
 
+.champions-row {
+    display: flex;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+    margin-bottom: 2rem;
+}
+
+.champions-row .champion-card {
+    flex: 1;
+    min-width: 280px;
+    margin-bottom: 0;
+}
+
 .table-container {
     background-color: var(--card-bg);
     border-radius: 12px;

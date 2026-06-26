@@ -76,3 +76,23 @@ collections:
               - { label: "Title", name: "title", widget: "string" }
               - { label: "Video URL (from YouTube)", name: "url", widget: "string" }
               - { label: "Description", name: "description", widget: "text", required: false }
+
+  - name: "semiannual_champions_data"
+    label: "Semi-Annual Champions"
+    media_folder: "../assets/images/players"
+    public_folder: "/assets/images/players"
+    files:
+      - file: "_data/semiannual_champions.yml"
+        label: "Semi-Annual Champions"
+        name: "semiannual_champions"
+        fields:
+          - name: "champions"
+            label: "Edit Champions"
+            widget: "list"
+            label_singular: "Champion"
+            fields:
+              - { label: "Player Name", name: "name", widget: "string" }
+              - { label: "Season", name: "season", widget: "string", hint: "e.g. 'Early 2026 (Jan - Jun)'" }
+              - { label: "Notes (score, details, or blank)", name: "notes", widget: "string", required: false }
+              - { label: "Is Current Champion?", name: "current", widget: "boolean", default: false }
+              - { label: "Optional Champion Photo", name: "image", widget: "image", required: false }
