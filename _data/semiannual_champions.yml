@@ -1,10 +1,10 @@
-# Semi-Annual Champions
-# The winner of each six-month bracket. Set current: true for the active season.
-# Notes can be winning score, bracket details, or left blank.
-
 champions:
-  - name: ""
-    season: "Early 2026 (Jan - Jun)"
-    notes: ""
-    current: true
-    image: ""
+  - current: true
+    name: Dennis Milosky
+    season: Early 2026
+    notes: In our first Half Yearly Championship, Dennis defeated Herbert Medina
+      247-198; then defeated Joe Berger 225-172 in the final game. For his
+      singular achievement, he was awarded the coveted 2 pcs Spork set, which
+      signifies ability to adapt to changing lane conditions much as the spork
+      is able to adapt to changing food conditions. Way to go Dennis!
+    image: /assets/images/players/1st-half-2026-champ.jpg
