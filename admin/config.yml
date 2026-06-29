@@ -41,6 +41,7 @@ collections:
               - { label: "Series Score", name: "series", widget: "number" }
               - { label: "Is Current Champion?", name: "current", widget: "boolean", default: false }
               - { label: "Optional Champion Photo", name: "image", widget: "image", required: false }
+              - { label: "Notes (blank if none)", name: "notes", widget: "string", required: false }
 
   - name: "trophy_locations_data"
     label: "Trophy Location Photos"
