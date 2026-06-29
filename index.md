@@ -21,7 +21,7 @@ The official home for our weekly casual competition.
     <h3 style="margin-top: 0;">{{ current_winner_entry.name }}</h3>
     <p style="text-align: center; margin-bottom: 0;"><strong>Week Of:</strong> {{ current_winner_entry.week }} | <strong>Series:</strong> {{ current_winner_entry.series }}</p>
     {% if current_winner_entry.notes %}
-    <p style="text-align: center; margin-top: 0.5rem; font-style: italic; color: #6A7A5C;">📝 {{ current_winner_entry.notes }}</p>
+    <p style="text-align: center; margin-top: 0.25rem;">{{ current_winner_entry.notes }}</p>
     {% endif %}
 </div>
 {% endif %}
@@ -34,7 +34,10 @@ The official home for our weekly casual competition.
         <img src="{{ semiannual_champion.image | relative_url }}" alt="{{ semiannual_champion.name }}" style="max-width: 300px; border-radius: 8px; margin: 0 auto 1rem; display: block;">
     {% endif %}
     <h3 style="margin-top: 0;">{{ semiannual_champion.name | default: "TBD" }}</h3>
-    <p style="text-align: center; margin-bottom: 0;"><strong>Season:</strong> {{ semiannual_champion.season }}{% if semiannual_champion.notes and semiannual_champion.notes != "" %} | {{ semiannual_champion.notes }}{% endif %}</p>
+    <p style="text-align: center; margin-bottom: 0;"><strong>Season:</strong> {{ semiannual_champion.season }}</p>
+    {% if semiannual_champion.notes and semiannual_champion.notes != "" %}
+    <p style="text-align: center; margin-top: 0.25rem;">{{ semiannual_champion.notes }}</p>
+    {% endif %}
 </div>
 {% endif %}
 
