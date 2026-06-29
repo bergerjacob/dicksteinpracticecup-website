@@ -20,6 +20,9 @@ The official home for our weekly casual competition.
     {% endif %}
     <h3 style="margin-top: 0;">{{ current_winner_entry.name }}</h3>
     <p style="text-align: center; margin-bottom: 0;"><strong>Week Of:</strong> {{ current_winner_entry.week }} | <strong>Series:</strong> {{ current_winner_entry.series }}</p>
+    {% if current_winner_entry.notes %}
+    <p style="text-align: center; margin-top: 0.5rem; font-style: italic; color: #6A7A5C;">📝 {{ current_winner_entry.notes }}</p>
+    {% endif %}
 </div>
 {% endif %}
 
