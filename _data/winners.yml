@@ -54,7 +54,7 @@ winners:
     week: 5/20/26
     series: 738
     image: /assets/images/players/5-20-26.jpg
-  - current: true
+  - current: false
     name: Herbert M
     week: 6/18/26
     series: 756
@@ -91,3 +91,10 @@ winners:
     week: 12/17/25
     series: 668
     image: /assets/images/players/12-17-25.jpg
+  - current: true
+    name: Paul Amato
+    week: 7/2/26
+    series: 692
+    image: /assets/images/players/7-2-26.jpg
+    notes: Paul and Carol were tied after 3 games @ 692. Paul won the exciting
+      playoff 196-185. Congrats to both for excellent bowling!
