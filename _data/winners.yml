@@ -1,9 +1,9 @@
 winners:
   - name: Bruce Rufener
-    week: 9/3/25
-    series: 683
-    current: false
-    image: /assets/images/players/bruce-rufener.jpg
+    week: 8/5/26
+    series: 728
+    current: true
+    image: /assets/images/players/11-19-25.jpg
   - name: Derral Smith
     week: 8/28/25
     series: 680
@@ -98,7 +98,7 @@ winners:
     image: /assets/images/players/7-2-26.jpg
     notes: Paul and Carol were tied after 3 games @ 692. Paul won the exciting
       playoff 196-185. Congrats to both for excellent bowling!
-  - current: true
+  - current: false
     name: Paul Dieringer
     week: 7/30/26
     series: 642
