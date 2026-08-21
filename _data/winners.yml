@@ -66,11 +66,15 @@ winners:
     week: 9/24/25
     series: 734
     image: /assets/images/players/9-24-25.jpg
-  - current: false
+  - current: true
     name: Dennis Milosky
-    week: 6/4/26
-    series: 631
-    image: /assets/images/players/6-4-26.jpg
+    week: 8/20/26
+    series: 703
+    image: /assets/images/players/8-20-26.jpg
+    notes: 300 game today by Dennis, woohoo- way to go!! We now have a total of 5
+      players who have rolled the perfect game in the Practice Cup. I think that
+      says a lot as to the quality of players and level of competitiveness from
+      all who compete each week. Way to go guys!
   - current: false
     name: Tyler Hoang
     week: 10/15/25
@@ -98,7 +102,7 @@ winners:
     image: /assets/images/players/7-2-26.jpg
     notes: Paul and Carol were tied after 3 games @ 692. Paul won the exciting
       playoff 196-185. Congrats to both for excellent bowling!
-  - current: true
+  - current: false
     name: Paul Dieringer
     week: 8/13/26
     series: 689
