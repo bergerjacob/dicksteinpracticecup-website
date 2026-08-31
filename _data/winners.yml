@@ -1,8 +1,8 @@
 winners:
   - name: Bruce Rufener
-    week: 8/5/26
-    series: 729
-    current: false
+    week: 8/27/26
+    series: 731
+    current: true
     image: /assets/images/players/11-19-25.jpg
   - name: Derral Smith
     week: 8/28/25
@@ -66,7 +66,7 @@ winners:
     week: 9/24/25
     series: 734
     image: /assets/images/players/9-24-25.jpg
-  - current: true
+  - current: false
     name: Dennis Milosky
     week: 8/20/26
     series: 703
