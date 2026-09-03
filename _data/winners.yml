@@ -1,9 +1,12 @@
 winners:
   - name: Bruce Rufener
     week: 8/27/26
-    series: 731
+    series: 647
     current: true
-    image: /assets/images/players/11-19-25.jpg
+    image: /assets/images/players/croatia.jpg
+    notes: Thanks to Joseph Berger and his crew on the S.S. Minnow, the Practice Cup
+      is proving to be a truly international affair and widely recognized around
+      the world as the leading competition for improving bowling skills.
   - name: Derral Smith
     week: 8/28/25
     series: 680
