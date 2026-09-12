@@ -2,7 +2,7 @@ winners:
   - name: Bruce Rufener
     week: 8/27/26
     series: 647
-    current: true
+    current: false
     image: /assets/images/players/croatia.jpg
     notes: Thanks to Joseph Berger and his crew on the S.S. Minnow, the Practice Cup
       is proving to be a truly international affair and widely recognized around
@@ -83,11 +83,11 @@ winners:
     week: 10/15/25
     series: 633
     image: /assets/images/players/tyler-h.jpg
-  - current: false
+  - current: true
     name: Terry Dodson
-    week: 5/27/26
-    series: 695
-    image: /assets/images/players/5-27-26.jpg
+    week: 9/9/26
+    series: 664
+    image: /assets/images/players/9-9-26.jpg
   - current: false
     name: Mr. Turkey
     week: 11-26-25
