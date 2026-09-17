@@ -83,7 +83,7 @@ winners:
     week: 10/15/25
     series: 633
     image: /assets/images/players/tyler-h.jpg
-  - current: true
+  - current: false
     name: Terry Dodson
     week: 9/9/26
     series: 665
@@ -110,3 +110,8 @@ winners:
     week: 8/13/26
     series: 689
     image: /assets/images/players/8-13-26.jpg
+  - current: true
+    name: Wes Farron
+    week: 09/16/26
+    series: 627
+    image: /assets/images/players/9-16-26.jpg
