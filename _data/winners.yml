@@ -2,7 +2,7 @@ winners:
   - name: Bruce Rufener
     week: 9/30/26
     series: 699
-    current: true
+    current: false
     image: /assets/images/players/9-30-26.jpg
     notes: ""
   - name: Derral Smith
@@ -35,11 +35,13 @@ winners:
     week: 4/29/26
     series: 674
     image: /assets/images/players/4-29-26.jpg
-  - current: false
+  - current: true
     name: Dave Martinot
-    week: 7/17/25
-    series: 682
-    image: /assets/images/players/dave-martinot.jpg
+    week: 10/7/26
+    series: 643
+    image: /assets/images/players/10-7-26.jpg
+    notes: Congrats to Dave Martinot, winner of the 100th edition of prestigious
+      Practice Cup!!
   - current: false
     name: Bruce Rufener
     week: 7/10/25
