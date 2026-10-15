@@ -35,7 +35,7 @@ winners:
     week: 4/29/26
     series: 674
     image: /assets/images/players/4-29-26.jpg
-  - current: true
+  - current: false
     name: Dave Martinot
     week: 10/7/26
     series: 643
@@ -93,11 +93,11 @@ winners:
     week: 11-26-25
     series: 30
     image: /assets/images/players/mr.-turkey.png
-  - current: false
+  - current: true
     name: Shea Pirtle
-    week: 12/17/25
-    series: 668
-    image: /assets/images/players/12-17-25.jpg
+    week: 10/14/26
+    series: 726
+    image: /assets/images/players/10-14-26.jpg
   - current: false
     name: Paul Amato
     week: 7/2/26
