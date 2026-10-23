@@ -30,11 +30,11 @@ winners:
     week: 7/31/25
     series: 708
     image: /assets/images/players/bruce-rufener.jpg
-  - current: false
+  - current: true
     name: Mark Lackey
-    week: 4/29/26
-    series: 674
-    image: /assets/images/players/4-29-26.jpg
+    week: 10/21/26
+    series: 707
+    image: /assets/images/players/10-21-26.jpg
   - current: false
     name: Dave Martinot
     week: 10/7/26
@@ -93,7 +93,7 @@ winners:
     week: 11-26-25
     series: 30
     image: /assets/images/players/mr.-turkey.png
-  - current: true
+  - current: false
     name: Shea Pirtle
     week: 10/14/26
     series: 726
