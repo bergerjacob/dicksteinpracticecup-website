@@ -25,12 +25,12 @@ winners:
     series: 712
     current: false
     image: /assets/images/players/bruce-rufener.jpg
-  - current: false
-    name: Bruce Rufener
-    week: 7/31/25
-    series: 708
-    image: /assets/images/players/bruce-rufener.jpg
   - current: true
+    name: Bruce Rufener
+    week: 10/28/26
+    series: 658
+    image: /assets/images/players/10-28-26.jpg
+  - current: false
     name: Mark Lackey
     week: 10/21/26
     series: 707
