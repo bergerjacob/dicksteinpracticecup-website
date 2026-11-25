@@ -4,7 +4,7 @@ winners:
     series: 703
     current: false
     image: /assets/images/players/derral-smith.jpg
-  - current: true
+  - current: false
     name: Bruce Rufener
     week: 11/4/26
     series: 692
@@ -26,11 +26,11 @@ winners:
     week: 7/23/26
     series: 705
     image: /assets/images/players/7-23-26.jpg
-  - current: false
+  - current: true
     name: Herbert M
-    week: 6/18/26
-    series: 756
-    image: /assets/images/players/6-18-26.jpg
+    week: 11/18/26
+    series: 667
+    image: /assets/images/players/11-18-26.jpg
     notes: Herbert finished out the first half of 2026 with high game of 300 (which
       is fairly high) as well as the high series of 756- way to go Herbert!!
   - current: false
